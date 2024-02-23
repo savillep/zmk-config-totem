@@ -111,10 +111,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp HOME   &kp ESCAPE  &kp UP            &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7                   &kp KP_N8              &kp KP_N9  &kp KP_PLUS
-       &kp LSHFT  &kp LEFT    &kp DOWN          &kp RIGHT  &kp LBKT    &kp RBKT  &mt LEFT_SHIFT KP_NUMBER_4  &mt LCTRL KP_NUMBER_5  &kp KP_N6  &kp KP_MINUS
-&mo 3  &kp END    &kp PG_UP   &kp LEFT_CONTROL  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1                   &kp KP_N2              &kp KP_N3  &kp KP_MULTIPLY  &kp KP_DIVIDE
-                              &trans            &trans     &trans      &trans    &kp KP_N0                   &kp KP_DOT
+       &kp HOME   &kp ESCAPE  &kp UP         &kp EQUAL         &kp LBRC                &kp RBRC               &kp KP_N7                   &kp KP_N8              &kp KP_N9  &kp KP_PLUS
+       &kp LSHFT  &kp LEFT    &kp DOWN       &kp RIGHT         &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &mt LEFT_SHIFT KP_NUMBER_4  &mt LCTRL KP_NUMBER_5  &kp KP_N6  &kp KP_MINUS
+&mo 3  &kp END    &kp PG_UP   &kp PAGE_DOWN  &kp LEFT_CONTROL  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp KP_N1                   &kp KP_N2              &kp KP_N3  &kp KP_MULTIPLY  &kp KP_DIVIDE
+                              &trans         &trans            &trans                  &trans                 &kp KP_N0                   &kp KP_DOT
             >;
         };
 
@@ -137,10 +137,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp ASTRK  &kp SQT  &kp DQT
-        &trans    &trans  &trans    &trans    &trans       &trans     &trans    &trans     &trans   &trans
-&trans  &trans    &trans  &trans    &trans    &trans       &trans     &trans    &trans     &trans   &kp BSLH  &kp SLASH
-                          &trans    &trans    &trans       &trans     &trans    &trans
+        &kp EXCL  &kp AT     &kp HASH          &kp DLLR        &kp PRCNT               &kp CARET              &kp AMPS        &kp ASTRK         &kp SQT       &kp DQT
+        &trans    &trans     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp MINUS     &kp UNDER
+&trans  &trans    &kp K_CUT  &kp K_COPY        &kp K_PASTE     &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &trans          &kp PLUS          &kp KP_EQUAL  &kp BSLH   &kp SLASH
+                             &trans            &trans          &trans                  &trans                 &trans          &trans
             >;
         };
 
@@ -163,10 +163,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans        &trans  &trans    &trans  &trans  &trans
+        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &kp LA(LC(PAGE_DOWN))    &trans  &kp F7  &kp F8  &kp F9  &kp F12
+        &bootloader  &bt BT_NXT  &trans        &trans  &trans                   &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans       &bt BT_PRV  &trans        &trans  &trans                   &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                 &trans        &trans  &trans                   &trans  &trans  &trans
             >;
         };
 
