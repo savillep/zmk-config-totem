@@ -137,10 +137,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL  &kp AT     &kp HASH          &kp DLLR        &kp PRCNT               &kp CARET              &kp AMPS        &kp ASTRK         &kp SQT       &kp DQT
-        &trans    &trans     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp MINUS     &kp UNDER
-&trans  &trans    &kp K_CUT  &kp K_COPY        &kp K_PASTE     &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &trans          &kp PLUS          &kp KP_EQUAL  &kp BSLH   &kp SLASH
-                             &trans            &trans          &trans                  &trans                 &trans          &trans
+            &kp EXCL           &kp AT     &kp HASH          &kp DLLR        &kp PRCNT               &kp CARET              &kp AMPS        &kp ASTRK         &kp SQT       &kp DQT
+            &kp C_VOLUME_UP    &trans     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp MINUS     &kp UNDER
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp K_CUT  &kp K_COPY        &kp K_PASTE     &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &trans          &kp PLUS          &kp KP_EQUAL  &kp BSLH   &kp SLASH
+                                          &trans            &trans          &trans                  &trans                 &trans          &trans
             >;
         };
 
