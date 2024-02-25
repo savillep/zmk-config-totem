@@ -111,9 +111,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans    &trans        &kp KP_N7                   &kp KP_N8              &kp KP_N9  &kp KP_PLUS
-       &trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans    &trans        &mt LEFT_SHIFT KP_NUMBER_4  &mt LCTRL KP_NUMBER_5  &kp KP_N6  &kp KP_MINUS
-&mo 3  &trans  &kp HOME     &trans    &kp END        &trans    &kp KP_EQUAL  &kp KP_N1                   &kp KP_N2              &kp KP_N3  &kp KP_MULTIPLY  &kp KP_DIVIDE
+       &trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans    &trans        &kp KP_N7                   &kp KP_N8              &kp KP_N9                 &kp KP_PLUS
+       &trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans    &trans        &mt LEFT_SHIFT KP_NUMBER_4  &mt LCTRL KP_NUMBER_5  &mt LEFT_ALT KP_NUMBER_6  &kp KP_MINUS
+&mo 3  &trans  &kp HOME     &trans    &kp END        &trans    &kp KP_EQUAL  &kp KP_N1                   &kp KP_N2              &kp KP_N3                 &kp KP_MULTIPLY  &kp KP_DIVIDE
                             &trans    &trans         &trans    &trans        &kp KP_N0                   &kp KP_DOT
             >;
         };
