@@ -23,7 +23,7 @@
 #define TVP2 5
 
 &mt {
-    quick-tap-ms = <100>;
+    quick-tap-ms = <150>;
     global-quick-tap;
     flavor = "tap-preferred";
     tapping-term-ms = <250>;
@@ -111,10 +111,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &trans  &trans    &kp UP    &kp PAGE_UP       &kp PAGE_DOWN       &kp LEFT_PARENTHESIS   &kp KP_NUMBER_7                   &kp KP_N8                    &kp KP_N9                 &kp KP_PLUS
-       &trans  &kp LEFT  &kp DOWN  &kp RIGHT         &kp ESCAPE          &kp RIGHT_PARENTHESIS  &mt LEFT_SHIFT KP_NUMBER_4        &mt LCTRL KP_NUMBER_5        &mt LEFT_ALT KP_NUMBER_6  &kp KP_MINUS
-&mo 3  &trans  &trans    &trans    &kp HOME          &kp END             &kp KP_EQUAL           &kp KP_N1                         &kp KP_N2                    &kp KP_N3                 &kp KP_MULTIPLY  &kp KP_DIVIDE
-                         &trans    &kp LA(LEFT_GUI)  &kp LS(LEFT_GUI)    &kp LEFT_GUI           &mt LS(LEFT_CONTROL) KP_NUMBER_0  &mt LA(LEFT_CONTROL) KP_DOT
+        &trans  &trans    &kp UP    &kp PAGE_UP       &kp PAGE_DOWN       &kp LEFT_PARENTHESIS   &kp KP_NUMBER_7                   &kp KP_N8                    &kp KP_N9                 &kp KP_PLUS
+        &trans  &kp LEFT  &kp DOWN  &kp RIGHT         &kp ESCAPE          &kp RIGHT_PARENTHESIS  &mt LEFT_SHIFT KP_NUMBER_4        &mt LCTRL KP_NUMBER_5        &mt LEFT_ALT KP_NUMBER_6  &kp KP_MINUS
+&trans  &trans  &trans    &trans    &kp HOME          &kp END             &kp KP_EQUAL           &kp KP_N1                         &kp KP_N2                    &kp KP_N3                 &kp KP_MULTIPLY  &kp KP_DIVIDE
+                          &trans    &kp LA(LEFT_GUI)  &kp LS(LEFT_GUI)    &kp LEFT_GUI           &mt LS(LEFT_CONTROL) KP_NUMBER_0  &mt LA(LEFT_CONTROL) KP_DOT
             >;
         };
 
