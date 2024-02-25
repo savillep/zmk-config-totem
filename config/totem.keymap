@@ -111,10 +111,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans    &trans        &kp KP_N7                   &kp KP_N8              &kp KP_N9                 &kp KP_PLUS
-       &trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans    &trans        &mt LEFT_SHIFT KP_NUMBER_4  &mt LCTRL KP_NUMBER_5  &mt LEFT_ALT KP_NUMBER_6  &kp KP_MINUS
-&mo 3  &trans  &kp HOME     &trans    &kp END        &trans    &kp KP_EQUAL  &kp KP_N1                   &kp KP_N2              &kp KP_N3                 &kp KP_MULTIPLY  &kp KP_DIVIDE
-                            &trans    &trans         &trans    &trans        &kp KP_N0                   &kp KP_DOT
+       &trans  &trans    &kp UP    &kp PAGE_UP  &kp PAGE_DOWN           &kp LEFT_PARENTHESIS   &kp KP_NUMBER_7             &kp KP_N8              &kp KP_N9                 &kp KP_PLUS
+       &trans  &kp LEFT  &kp DOWN  &kp RIGHT    &kp ESCAPE              &kp RIGHT_PARENTHESIS  &mt LEFT_SHIFT KP_NUMBER_4  &mt LCTRL KP_NUMBER_5  &mt LEFT_ALT KP_NUMBER_6  &kp KP_MINUS
+&mo 3  &trans  &trans    &trans    &kp HOME     &kp END                 &kp KP_EQUAL           &kp KP_N1                   &kp KP_N2              &kp KP_N3                 &kp KP_MULTIPLY  &kp KP_DIVIDE
+                         &trans    &trans       &kp LA(LEFT_CONTROL)    &kp LS(LEFT_CONTROL)   &kp KP_N0                   &kp KP_DOT
             >;
         };
 
@@ -138,7 +138,7 @@
 
             bindings = <
         &kp EXCL  &kp AT      &kp HASH      &kp DLLR              &kp PRCNT           &kp CARET          &kp AMPS               &kp ASTRK  &kp KP_MINUS  &kp UNDERSCORE
-        &trans    &trans      &trans        &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans     &kp PLUS      &kp EQUAL
+        &trans    &kp GRAVE   &kp TILDE     &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans     &kp PLUS      &kp EQUAL
 &trans  &trans    &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP          &kp LEFT_BRACE      &kp RIGHT_BRACE    &trans                 &trans     &trans        &trans          &trans
                               &trans        &trans                &trans              &trans             &trans                 &trans
             >;
