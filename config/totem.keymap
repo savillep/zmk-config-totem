@@ -93,9 +93,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q       &kp D       &kp R        &kp W        &kp B            &kp J      &kp F                     &kp U                              &kp P           &kp SEMI
-              &mt LGUI A  &mt LALT S  &mt LCTRL H  &mt LSHFT T  &lt 1 G          &lt 1 Y    &mt RSHFT N               &mt RCTRL E                        &mt LEFT_ALT O  &kp I
-&lt 5 ESCAPE  &kp Z       &kp X       &kp M        &lt 2 C      &lt 3 V          &lt 3 K    &lt 2 L                   &kp COMMA                          &kp DOT         &kp FSLH  &lt 4 BACKSLASH
+              &kp Q       &kp W       &kp F        &kp P        &kp B            &kp J      &kp L                     &kp U                              &kp Y           &kp SEMI
+              &mt LGUI A  &mt LALT S  &mt LCTRL H  &mt LSHFT T  &lt 1 G          &lt 1 M    &mt RSHFT N               &mt RCTRL E                        &mt LEFT_ALT I  &kp O
+&lt 5 ESCAPE  &kp Z       &kp X       &kp C        &lt 2 D      &lt 3 V          &lt 3 K    &lt 2 H                   &kp COMMA                          &kp DOT         &kp FSLH  &lt 4 BACKSLASH
                                       &kp DELETE   &kp RET      &kp BACKSPACE    &kp SPACE  &mt LS(LEFT_CONTROL) TAB  &mt LA(LEFT_CONTROL) SINGLE_QUOTE
             >;
         };
