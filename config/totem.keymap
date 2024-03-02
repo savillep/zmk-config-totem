@@ -93,10 +93,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q       &kp D       &kp R        &kp W        &kp B            &kp J      &kp F                     &kp U                              &kp P           &kp SEMI
-            &mt LGUI A  &mt LALT S  &mt LCTRL H  &mt LSHFT T  &lt 1 G          &lt 1 Y    &mt RSHFT N               &mt RCTRL E                        &mt LEFT_ALT O  &kp I
-&kp ESCAPE  &kp Z       &kp X       &kp M        &kp C        &lt 2 V          &lt 2 K    &kp L                     &kp COMMA                          &kp DOT         &kp FSLH  &lt 3 BACKSLASH
-                                    &kp DELETE   &kp RET      &kp BACKSPACE    &kp SPACE  &mt LS(LEFT_CONTROL) TAB  &mt LA(LEFT_CONTROL) SINGLE_QUOTE
+              &kp Q       &kp D       &kp R        &kp W        &kp B            &kp J      &kp F                     &kp U                              &kp P           &kp SEMI
+              &mt LGUI A  &mt LALT S  &mt LCTRL H  &mt LSHFT T  &lt 1 G          &lt 1 Y    &mt RSHFT N               &mt RCTRL E                        &mt LEFT_ALT O  &kp I
+&lt 5 ESCAPE  &kp Z       &kp X       &kp M        &lt 2 C      &lt 3 V          &lt 3 K    &lt 2 L                   &kp COMMA                          &kp DOT         &kp FSLH  &lt 4 BACKSLASH
+                                      &kp DELETE   &kp RET      &kp BACKSPACE    &kp SPACE  &mt LS(LEFT_CONTROL) TAB  &mt LA(LEFT_CONTROL) SINGLE_QUOTE
             >;
         };
 
@@ -119,10 +119,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &trans    &kp UP            &kp PAGE_UP       &kp PAGE_DOWN               &kp LEFT_PARENTHESIS   &kp KP_NUMBER_7                   &kp KP_N8                    &kp KP_N9                 &kp KP_PLUS
-        &trans  &kp LEFT  &kp DOWN          &kp RIGHT         &kp ESCAPE                  &kp RIGHT_PARENTHESIS  &mt LEFT_SHIFT KP_NUMBER_4        &mt LCTRL KP_NUMBER_5        &mt LEFT_ALT KP_NUMBER_6  &kp KP_MINUS
-&trans  &trans  &trans    &trans            &kp HOME          &kp END                     &kp KP_EQUAL           &kp KP_N1                         &kp KP_N2                    &kp KP_N3                 &kp KP_MULTIPLY  &kp KP_DIVIDE
-                          &kp LA(LEFT_GUI)  &kp LS(LEFT_GUI)  &kp LS(LA(LEFT_CONTROL))    &trans                 &mt LS(LEFT_CONTROL) KP_NUMBER_0  &mt LA(LEFT_CONTROL) KP_DOT
+        &none  &none     &kp UP            &kp PAGE_UP       &kp PAGE_DOWN               &kp LEFT_PARENTHESIS   &kp KP_NUMBER_7                   &kp KP_N8                    &kp KP_N9                 &kp KP_PLUS
+        &none  &kp LEFT  &kp DOWN          &kp RIGHT         &kp ESCAPE                  &kp RIGHT_PARENTHESIS  &mt LEFT_SHIFT KP_NUMBER_4        &mt LCTRL KP_NUMBER_5        &mt LEFT_ALT KP_NUMBER_6  &kp KP_MINUS
+&trans  &none  &none     &none             &kp HOME          &kp END                     &kp KP_EQUAL           &kp KP_N1                         &kp KP_N2                    &kp KP_N3                 &kp KP_MULTIPLY  &kp KP_DIVIDE
+                         &kp LA(LEFT_GUI)  &kp LS(LEFT_GUI)  &kp LS(LA(LEFT_CONTROL))    &trans                 &mt LS(LEFT_CONTROL) KP_NUMBER_0  &mt LA(LEFT_CONTROL) KP_DOT
             >;
         };
 
@@ -227,6 +227,15 @@
         &trans       &kp LS(LEFT)  &kp LC(F17)   &kp LS(RIGHT)  &kp RET        &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &kp J        &kp LS(C)     &kp LC(F16)   &kp LS(V)      &kp LC(F15)    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                    &trans        &kp LC(F12)    &kp LC(F11)    &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
