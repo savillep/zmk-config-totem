@@ -61,6 +61,14 @@
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
         };
+
+        PrScr: PrScr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(S) &kp LEFT_GUI>, <&macro_press>;
+
+            label = "PRSCR";
+        };
     };
 
     keymap {
@@ -111,10 +119,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &trans    &kp UP    &kp PAGE_UP       &kp PAGE_DOWN       &kp LEFT_PARENTHESIS   &kp KP_NUMBER_7                   &kp KP_N8                    &kp KP_N9                 &kp KP_PLUS
-        &trans  &kp LEFT  &kp DOWN  &kp RIGHT         &kp ESCAPE          &kp RIGHT_PARENTHESIS  &mt LEFT_SHIFT KP_NUMBER_4        &mt LCTRL KP_NUMBER_5        &mt LEFT_ALT KP_NUMBER_6  &kp KP_MINUS
-&trans  &trans  &trans    &trans    &kp HOME          &kp END             &kp KP_EQUAL           &kp KP_N1                         &kp KP_N2                    &kp KP_N3                 &kp KP_MULTIPLY  &kp KP_DIVIDE
-                          &trans    &kp LA(LEFT_GUI)  &kp LS(LEFT_GUI)    &kp LEFT_GUI           &mt LS(LEFT_CONTROL) KP_NUMBER_0  &mt LA(LEFT_CONTROL) KP_DOT
+        &trans  &trans    &kp UP            &kp PAGE_UP       &kp PAGE_DOWN               &kp LEFT_PARENTHESIS   &kp KP_NUMBER_7                   &kp KP_N8                    &kp KP_N9                 &kp KP_PLUS
+        &trans  &kp LEFT  &kp DOWN          &kp RIGHT         &kp ESCAPE                  &kp RIGHT_PARENTHESIS  &mt LEFT_SHIFT KP_NUMBER_4        &mt LCTRL KP_NUMBER_5        &mt LEFT_ALT KP_NUMBER_6  &kp KP_MINUS
+&trans  &trans  &trans    &trans            &kp HOME          &kp END                     &kp KP_EQUAL           &kp KP_N1                         &kp KP_N2                    &kp KP_N3                 &kp KP_MULTIPLY  &kp KP_DIVIDE
+                          &kp LA(LEFT_GUI)  &kp LS(LEFT_GUI)  &kp LS(LA(LEFT_CONTROL))    &trans                 &mt LS(LEFT_CONTROL) KP_NUMBER_0  &mt LA(LEFT_CONTROL) KP_DOT
             >;
         };
 
@@ -137,10 +145,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL   &kp AT     &kp HASH          &kp DLLR        &kp PRCNT    &kp CARET             &kp AMPS               &kp ASTRK       &kp KP_MINUS     &kp UNDERSCORE
-        &kp GRAVE  &kp TILDE  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans          &kp PLUS         &kp EQUAL
-&trans  &trans     &trans     &trans            &trans          &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans          &trans
-                              &trans            &trans          &trans       &trans                &trans                 &trans
+        &kp EXCL   &kp AT     &kp HASH          &kp DLLR        &kp PRCNT       &kp CARET             &kp AMPS               &kp ASTRK       &kp KP_MINUS     &kp UNDERSCORE
+        &kp GRAVE  &kp TILDE  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_GUI    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans          &kp PLUS         &kp EQUAL
+&trans  &none      &none      &none             &none           &kp CAPS        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &none           &none
+                              &trans            &trans          &trans          &trans                &trans                 &trans
             >;
         };
 
@@ -163,10 +171,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans        &kp LA(LC(PAGE_DOWN))    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &trans        &trans        &trans                   &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &bt BT_PRV  &kp K_MUTE    &kp C_VOL_DN  &kp C_VOLUME_UP          &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans        &trans        &trans                   &trans  &trans  &trans
+      &sys_reset   &bt BT_CLR  &out OUT_TOG  &none         &kp LA(LC(PAGE_DOWN))    &none   &kp F7  &kp F8  &kp F9  &kp F12
+      &bootloader  &bt BT_NXT  &none         &none         &PrScr                   &none   &kp F4  &kp F5  &kp F6  &kp F11
+&gif  &trans       &bt BT_PRV  &kp K_MUTE    &kp C_VOL_DN  &kp C_VOLUME_UP          &none   &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                               &trans        &trans        &trans                   &trans  &trans  &trans
             >;
         };
 
