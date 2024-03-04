@@ -171,10 +171,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-      &sys_reset   &bt BT_CLR  &out OUT_TOG  &none         &kp LA(LC(PAGE_DOWN))    &none   &kp F7  &kp F8  &kp F9  &kp F12
-      &bootloader  &bt BT_NXT  &none         &none         &kp LG(LS(S))            &none   &kp F4  &kp F5  &kp F6  &kp F11
-&gif  &trans       &bt BT_PRV  &kp K_MUTE    &kp C_VOL_DN  &kp C_VOLUME_UP          &none   &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                               &trans        &trans        &trans                   &trans  &trans  &trans
+      &sys_reset   &bt BT_CLR  &out OUT_TOG    &none         &kp LA(LC(PAGE_DOWN))    &none   &kp F7  &kp F8  &kp F9  &kp F12
+      &bootloader  &bt BT_PRV  &bt BT_CLR_ALL  &none         &kp LG(LS(S))            &none   &kp F4  &kp F5  &kp F6  &kp F11
+&gif  &trans       &bt BT_NXT  &kp K_MUTE      &kp C_VOL_DN  &kp C_VOLUME_UP          &none   &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                               &trans          &trans        &trans                   &trans  &trans  &trans
             >;
         };
 
