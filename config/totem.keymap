@@ -119,10 +119,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &none  &none     &kp UP            &kp PAGE_UP       &kp PAGE_DOWN               &kp LEFT_PARENTHESIS   &kp KP_NUMBER_7                   &kp KP_N8                    &kp KP_N9                 &kp KP_PLUS
-        &none  &kp LEFT  &kp DOWN          &kp RIGHT         &kp ESCAPE                  &kp RIGHT_PARENTHESIS  &mt LEFT_SHIFT KP_NUMBER_4        &mt LCTRL KP_NUMBER_5        &mt LEFT_ALT KP_NUMBER_6  &mt LEFT_GUI KP_MINUS
-&trans  &none  &none     &none             &kp HOME          &kp END                     &kp KP_EQUAL           &kp KP_N1                         &kp KP_N2                    &kp KP_N3                 &kp KP_MULTIPLY        &kp KP_DIVIDE
-                         &kp LA(LEFT_GUI)  &kp LS(LEFT_GUI)  &kp LS(LA(LEFT_CONTROL))    &trans                 &mt LS(LEFT_CONTROL) KP_NUMBER_0  &mt LA(LEFT_CONTROL) KP_DOT
+        &none  &none     &none             &kp PAGE_UP       &kp PAGE_DOWN     &kp LEFT_PARENTHESIS   &mt LS(LEFT_CONTROL) N7  &kp N8                         &kp KP_NUMBER_9        &kp KP_PLUS
+        &none  &kp LEFT  &kp UP_ARROW      &kp RIGHT         &kp ESCAPE        &kp RIGHT_PARENTHESIS  &mt LEFT_SHIFT NUMBER_4  &mt LCTRL N5                   &mt LEFT_ALT NUMBER_6  &mt LEFT_GUI KP_MINUS
+&trans  &none  &none     &kp DOWN_ARROW    &kp HOME          &kp END           &kp KP_EQUAL           &kp NUMBER_1             &mt LA(LEFT_CONTROL) NUMBER_2  &kp NUMBER_3           &kp KP_MULTIPLY        &kp KP_DIVIDE
+                         &kp LA(LEFT_GUI)  &kp LS(LEFT_GUI)  &kp LEFT_SHIFT    &trans                 &kp KP_NUMBER_0          &kp KP_DOT
             >;
         };
 
