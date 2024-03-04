@@ -93,10 +93,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q       &kp W       &kp F        &kp P        &kp B            &kp J      &kp L                     &kp U                              &kp Y           &kp SEMI
-              &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &lt 1 G          &lt 1 M    &mt RSHFT N               &mt RCTRL E                        &mt LEFT_ALT I  &kp O
-&lt 5 ESCAPE  &kp Z       &kp X       &kp C        &lt 2 D      &lt 3 V          &lt 3 K    &lt 2 H                   &kp COMMA                          &kp DOT         &kp FSLH  &lt 4 BACKSLASH
-                                      &kp DELETE   &kp RET      &kp BACKSPACE    &kp SPACE  &mt LS(LEFT_CONTROL) TAB  &mt LA(LEFT_CONTROL) SINGLE_QUOTE
+              &kp Q       &kp W       &kp F        &kp P        &kp B                       &kp J                 &mt LS(LEFT_CONTROL) L    &kp U                              &kp Y           &kp SEMI
+              &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &lt 1 G                     &lt 1 M               &mt RSHFT N               &mt RCTRL E                        &mt LEFT_ALT I  &kp O
+&lt 5 ESCAPE  &kp Z       &kp X       &kp C        &lt 2 D      &lt 3 V                     &lt 3 K               &lt 2 H                   &kp COMMA                          &kp DOT         &kp FSLH  &lt 4 BACKSLASH
+                                      &kp DELETE   &kp RET      &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LS(LEFT_CONTROL) TAB  &mt LA(LEFT_CONTROL) SINGLE_QUOTE
             >;
         };
 
