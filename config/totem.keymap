@@ -127,8 +127,8 @@
 
             bindings = <
         &kp N1     &kp N2     &kp N3          &kp N4                &kp NUMBER_5        &kp N6             &kp NUMBER_7           &kp N8           &kp NUMBER_9     &kp N0
-        &kp EXCL   &kp AT     &kp HASH        &kp DOLLAR            &kp PERCENT         &kp CARET          &kp AMPERSAND          &kp ASTRK        &kp MINUS        &kp UNDER
-&trans  &kp GRAVE  &kp TILDE  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACE  &kp PLUS   &kp EQUAL
+        &kp EXCL   &kp AT     &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp MINUS        &kp UNDER
+&trans  &kp GRAVE  &kp TILDE  &kp HASH        &kp DOLLAR            &kp PERCENT         &kp CARET          &kp AMPERSAND          &kp ASTERISK     &kp RIGHT_BRACE  &kp PLUS   &kp EQUAL
                               &trans          &trans                &trans              &trans             &trans                 &trans
             >;
         };
