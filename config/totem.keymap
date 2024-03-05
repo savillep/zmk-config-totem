@@ -150,10 +150,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &none  &none     &none           &kp PAGE_UP  &kp PAGE_DOWN    &kp LEFT_PARENTHESIS   &kp N7               &kp N8                    &kp N9                     &kp PLUS
-        &none  &kp LEFT  &kp UP_ARROW    &kp RIGHT    &kp ESCAPE       &kp RIGHT_PARENTHESIS  &mt LEFT_SHIFT N4    &kp N5                    &mt LEFT_CONTROL NUMBER_6  &kp MINUS
-&trans  &none  &none     &kp DOWN_ARROW  &kp HOME     &kp END          &kp EQUAL              &mt LEFT_GUI N1      &kp N2                    &mt LS(LEFT_GUI) N3        &kp SLASH  &kp ASTRK
-                         &trans          &trans       &trans           &trans                 &mt LEFT_CONTROL N0  &mt LS(LEFT_CONTROL) DOT
+        &none  &none     &none           &kp PAGE_UP  &kp PAGE_DOWN    &kp LEFT_PARENTHESIS    &kp N7               &kp N8                    &kp N9                     &kp PLUS
+        &none  &kp LEFT  &kp UP_ARROW    &kp RIGHT    &kp ESCAPE       &kp RIGHT_PARENTHESIS   &mt LEFT_SHIFT N4    &kp N5                    &mt LEFT_CONTROL NUMBER_6  &kp MINUS
+&trans  &none  &none     &kp DOWN_ARROW  &kp HOME     &kp END          &mt LS(LEFT_GUI) EQUAL  &mt LEFT_GUI N1      &kp N2                    &mt LS(LEFT_GUI) N3        &kp SLASH  &kp ASTRK
+                         &trans          &trans       &trans           &trans                  &mt LEFT_CONTROL N0  &mt LS(LEFT_CONTROL) DOT
             >;
         };
 
