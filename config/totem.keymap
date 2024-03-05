@@ -103,7 +103,7 @@
 
             bindings = <
             &kp Q    &kp W        &kp F                        &kp P                 &kp B                       &kp J                 &kp L                 &kp U                              &kp Y    &kp SEMI
-            &lt 4 A  &lt 3 R      &lt 2 S                      &lt 1 T               &kp G                       &kp M                 &lt 1 N               &lt 2 E                            &lt 3 I  &lt 5 O
+            &lt 4 A  &lt 3 R      &lt 2 S                      &lt 1 T               &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E                            &lt 3 I  &lt 5 O
 &kp ESCAPE  &kp Z    &mt K_CUT X  &mt K_COPY C                 &mt LEFT_ALT D        &mt K_PASTE V               &kp K                 &mt LEFT_ALT H        &mt LEFT_GUI COMMA                 &kp DOT  &kp FSLH  &kp BACKSLASH
                                   &mt LS(LEFT_CONTROL) DELETE  &mt LEFT_CONTROL RET  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &mt LS(LEFT_CONTROL) SINGLE_QUOTE
             >;
@@ -150,10 +150,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &none  &none     &none           &kp PAGE_UP  &kp PAGE_DOWN    &kp LEFT_PARENTHESIS    &kp N7               &kp N8                    &kp N9                     &kp PLUS
-        &none  &kp LEFT  &kp UP_ARROW    &kp RIGHT    &kp ESCAPE       &kp RIGHT_PARENTHESIS   &mt LEFT_SHIFT N4    &kp N5                    &mt LEFT_CONTROL NUMBER_6  &kp MINUS
-&trans  &none  &none     &kp DOWN_ARROW  &kp HOME     &kp END          &mt LS(LEFT_GUI) EQUAL  &mt LEFT_GUI N1      &kp N2                    &kp NUMBER_3               &kp SLASH  &kp ASTRK
-                         &trans          &trans       &trans           &trans                  &mt LEFT_CONTROL N0  &mt LS(LEFT_CONTROL) DOT
+        &none  &none     &none           &kp PAGE_UP  &kp PAGE_DOWN    &none             &kp N7               &kp N8                    &kp N9                     &kp EQUAL
+        &none  &kp LEFT  &kp UP_ARROW    &kp RIGHT    &kp ESCAPE       &kp LEFT_GUI      &mt LEFT_SHIFT N4    &kp N5                    &mt LEFT_CONTROL NUMBER_6  &kp MINUS
+&trans  &none  &none     &kp DOWN_ARROW  &kp HOME     &kp END          &kp LS(LEFT_GUI)  &kp NUMBER_1         &kp N2                    &kp NUMBER_3               &kp SLASH  &kp ASTRK
+                         &trans          &trans       &trans           &trans            &mt LEFT_CONTROL N0  &mt LS(LEFT_CONTROL) DOT
             >;
         };
 
