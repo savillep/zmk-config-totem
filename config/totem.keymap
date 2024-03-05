@@ -26,7 +26,7 @@
     quick-tap-ms = <225>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <250>;
+    tapping-term-ms = <275>;
 };
 
 / {
@@ -93,10 +93,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q       &kp W       &kp F                    &kp P             &kp B                       &kp J                 &mt LS(LEFT_CONTROL) L    &kp U                              &kp Y           &kp SEMI
-              &mt LGUI A  &mt LALT R  &mt LCTRL S              &mt LSHFT T       &lt 1 G                     &lt 1 M               &mt RSHFT N               &mt RCTRL E                        &mt LEFT_ALT I  &kp O
-&lt 4 ESCAPE  &kp Z       &kp X       &kp C                    &lt 2 D           &lt 3 V                     &lt 3 K               &lt 2 H                   &kp COMMA                          &kp DOT         &kp FSLH  &lt 5 BACKSLASH
-                                      &mt LS(LEFT_GUI) DELETE  &mt LEFT_GUI RET  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LS(LEFT_CONTROL) TAB  &mt LA(LEFT_CONTROL) SINGLE_QUOTE
+                     &kp Q    &kp W    &kp F                        &kp P                 &kp B                       &kp J                 &kp L                 &kp U                              &kp Y    &kp SEMI
+                     &lt 4 A  &lt 3 R  &lt 2 S                      &lt 1 T               &kp G                       &kp M                 &lt 1 N               &lt 2 E                            &lt 3 I  &lt 5 O
+&mt LEFT_ALT ESCAPE  &kp Z    &kp X    &kp C                        &mt LS(LEFT_GUI) D    &mt LEFT_GUI V              &mt LEFT_GUI K        &mt LS(LEFT_GUI) H    &kp COMMA                          &kp DOT  &kp FSLH  &mt LEFT_ALT BACKSLASH
+                                       &mt LS(LEFT_CONTROL) DELETE  &mt LEFT_CONTROL RET  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &mt LS(LEFT_CONTROL) SINGLE_QUOTE
             >;
         };
 
