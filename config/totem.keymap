@@ -71,6 +71,15 @@
         };
     };
 
+    behaviors {
+        Cut: Cut {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CUT";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL>, <&kp X>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -93,10 +102,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                     &kp Q    &kp W    &kp F                        &kp P                 &kp B                       &kp J                 &kp L                 &kp U                              &kp Y    &kp SEMI
-                     &lt 4 A  &lt 3 R  &lt 2 S                      &lt 1 T               &kp G                       &kp M                 &lt 1 N               &lt 2 E                            &lt 3 I  &lt 5 O
-&mt LEFT_ALT ESCAPE  &kp Z    &kp X    &kp C                        &mt LS(LEFT_GUI) D    &mt LEFT_GUI V              &mt LEFT_GUI K        &mt LS(LEFT_GUI) H    &kp COMMA                          &kp DOT  &kp FSLH  &mt LEFT_ALT BACKSLASH
-                                       &mt LS(LEFT_CONTROL) DELETE  &mt LEFT_CONTROL RET  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &mt LS(LEFT_CONTROL) SINGLE_QUOTE
+                     &kp Q    &kp W        &kp F                        &kp P                 &kp B                       &kp J                 &kp L                 &kp U                              &kp Y    &kp SEMI
+                     &lt 4 A  &lt 3 R      &lt 2 S                      &lt 1 T               &kp G                       &kp M                 &lt 1 N               &lt 2 E                            &lt 3 I  &lt 5 O
+&mt LEFT_ALT ESCAPE  &kp Z    &mt K_CUT X  &mt K_COPY C                 &kp D                 &mt K_PASTE V               &mt LEFT_GUI K        &mt LS(LEFT_GUI) H    &kp COMMA                          &kp DOT  &kp FSLH  &mt LEFT_ALT BACKSLASH
+                                           &mt LS(LEFT_CONTROL) DELETE  &mt LEFT_CONTROL RET  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &mt LS(LEFT_CONTROL) SINGLE_QUOTE
             >;
         };
 
