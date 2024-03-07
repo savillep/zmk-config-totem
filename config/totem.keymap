@@ -102,10 +102,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q    &kp W        &kp F                        &kp P                 &kp B                       &kp J                 &kp L                 &kp U                              &kp Y    &kp SEMI
-            &lt 4 A  &lt 3 R      &lt 2 S                      &lt 1 T               &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E                            &lt 3 I  &lt 5 O
-&kp ESCAPE  &kp Z    &mt K_CUT X  &mt K_COPY C                 &mt LEFT_ALT D        &mt K_PASTE V               &kp K                 &mt LEFT_ALT H        &mt LEFT_GUI COMMA                 &kp DOT  &kp FSLH  &kp BACKSLASH
-                                  &mt LS(LEFT_CONTROL) DELETE  &mt LEFT_CONTROL RET  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &mt LS(LEFT_CONTROL) SINGLE_QUOTE
+                          &kp Q    &kp W        &kp F                        &kp P                 &kp B                       &kp J                 &kp L                 &kp U                              &kp Y    &kp SEMI
+                          &lt 4 A  &lt 3 R      &lt 2 S                      &lt 1 T               &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E                            &lt 3 I  &lt 5 O
+&kp LS(LA(LEFT_CONTROL))  &kp Z    &mt K_CUT X  &mt K_COPY C                 &mt LEFT_ALT D        &mt K_PASTE V               &kp K                 &mt LEFT_ALT H        &kp COMMA                          &kp DOT  &kp FSLH  &kp BACKSLASH
+                                                &mt LS(LEFT_CONTROL) DELETE  &mt LEFT_CONTROL RET  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &mt LS(LEFT_CONTROL) SINGLE_QUOTE
             >;
         };
 
