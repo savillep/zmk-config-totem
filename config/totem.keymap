@@ -132,10 +132,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp CARET  &none      &kp ESCAPE        &kp EQUAL          &kp LEFT_ARROW    &kp RIGHT_ARROW  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &kp ASTERISK
-       &kp EXCL   &kp AT     &kp HASH          &kp DOLLAR         &kp PERCENT       &kp PIPE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDER
-&none  &kp GRAVE  &kp TILDE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp CAPS          &kp BACKSLASH    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &trans        &none
-                             &trans            &trans             &trans            &trans           &trans                &trans
+              &kp CARET  &none      &kp ESCAPE        &kp EQUAL          &kp LEFT_ARROW    &kp RIGHT_ARROW  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &kp ASTERISK
+              &kp EXCL   &kp AT     &kp HASH          &kp DOLLAR         &kp PERCENT       &kp PIPE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDER
+&kp CAPSLOCK  &kp GRAVE  &kp TILDE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp COLON         &kp BACKSLASH    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &trans        &none
+                                    &trans            &trans             &trans            &trans           &trans                &trans
             >;
         };
 
