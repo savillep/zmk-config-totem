@@ -23,10 +23,10 @@
 #define TVP2 5
 
 &mt {
-    quick-tap-ms = <225>;
+    quick-tap-ms = <200>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <275>;
+    tapping-term-ms = <300>;
 };
 
 / {
@@ -85,7 +85,7 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        base_layer {
+        base {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "BASE";
@@ -109,7 +109,7 @@
             >;
         };
 
-        sim_layer {
+        symbols {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "SYM";
@@ -126,14 +126,14 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp N1     &kp N2     &kp N3          &kp N4                &kp NUMBER_5        &kp N6             &kp NUMBER_7           &kp N8           &kp NUMBER_9     &kp N0
-        &kp EXCL   &kp AT     &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp MINUS        &kp UNDER
-&trans  &kp GRAVE  &kp TILDE  &kp HASH        &kp DOLLAR            &kp PERCENT         &kp CARET          &kp AMPERSAND          &kp ASTERISK     &kp RIGHT_BRACE  &kp PLUS   &kp EQUAL
-                              &trans          &trans                &trans              &trans             &trans                 &trans
+          &kp N1     &kp N2     &kp N3          &kp N4                &kp NUMBER_5        &kp N6             &kp NUMBER_7           &kp N8           &kp NUMBER_9     &kp N0
+          &kp EXCL   &kp AT     &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp MINUS        &kp UNDER
+&kp CAPS  &kp GRAVE  &kp TILDE  &kp HASH        &kp DOLLAR            &kp PERCENT         &kp CARET          &kp AMPERSAND          &kp ASTERISK     &kp RIGHT_BRACE  &kp PLUS   &kp EQUAL
+                                &trans          &trans                &trans              &trans             &trans                 &trans
             >;
         };
 
-        nav_layer {
+        nav_num {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "NAVI";
@@ -150,14 +150,14 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &none  &none     &none           &kp PAGE_UP        &kp PAGE_DOWN    &none             &kp N7                 &kp N8                    &kp N9        &kp EQUAL
-        &none  &kp LEFT  &kp UP_ARROW    &kp RIGHT          &kp ESCAPE       &kp LEFT_GUI      &kp NUMBER_4           &kp N5                    &kp NUMBER_6  &kp MINUS
-&trans  &none  &none     &kp DOWN_ARROW  &mt LEFT_ALT HOME  &kp END          &kp LS(LEFT_GUI)  &mt LEFT_ALT NUMBER_1  &kp N2                    &kp NUMBER_3  &kp SLASH  &kp ASTRK
-                         &trans          &trans             &trans           &trans            &mt LEFT_CONTROL N0    &mt LS(LEFT_CONTROL) DOT
+        &none  &kp PAGE_UP  &kp ESCAPE      &kp PAGE_DOWN     &none         &none             &kp N7                 &kp N8                    &kp N9        &kp EQUAL
+        &none  &kp LEFT     &kp UP_ARROW    &kp RIGHT         &kp ESCAPE    &kp LEFT_GUI      &kp NUMBER_4           &kp N5                    &kp NUMBER_6  &kp MINUS
+&trans  &none  &kp HOME     &kp DOWN_ARROW  &mt LEFT_ALT END  &none         &kp LS(LEFT_GUI)  &mt LEFT_ALT NUMBER_1  &kp N2                    &kp NUMBER_3  &kp SLASH  &kp ASTRK
+                            &trans          &trans            &trans        &trans            &mt LEFT_CONTROL N0    &mt LS(LEFT_CONTROL) DOT
             >;
         };
 
-        adjust_layer {
+        adj_f_keys {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "ADJ";
@@ -174,14 +174,14 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &sys_reset   &bt BT_CLR  &out OUT_TOG    &none         &kp LA(LC(PAGE_DOWN))    &none             &kp F7  &kp F8  &kp F9  &kp F12
-       &bootloader  &bt BT_PRV  &bt BT_CLR_ALL  &none         &kp LG(LS(S))            &kp LEFT_CONTROL  &kp F4  &kp F5  &kp F6  &kp F11
-&none  &trans       &bt BT_NXT  &kp K_MUTE      &kp C_VOL_DN  &kp C_VOLUME_UP          &kp CAPS          &kp F1  &kp F2  &kp F3  &kp F10  &none
-                                &trans          &trans        &trans                   &trans            &trans  &trans
+       &none  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LA(LC(PAGE_DOWN))    &none     &kp F7  &kp F8  &kp F9  &kp F12
+       &none  &none       &none              &none            &kp LG(LS(S))            &none     &kp F4  &kp F5  &kp F6  &kp F11
+&to 4  &none  &none       &none              &none            &kp CAPS                 &kp CAPS  &kp F1  &kp F2  &kp F3  &kp F10  &to 5
+                          &trans             &trans           &trans                   &trans    &trans  &trans
             >;
         };
 
-        tvp1_layer {
+        system {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "TVP 1";
@@ -198,10 +198,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp TAB    &kp I      &kp LC(LALT)  &kp O        &kp LC(F20)    &none  &none  &none  &none  &none
-       &lt 5 L    &kp LEFT   &kp LALT      &kp RIGHT    &kp SPACE      &none  &none  &none  &none  &none
-&kp J  &kp LSHFT  &kp LC(C)  &kp BSPC      &kp LC(V)    &kp LC(F19)    &none  &none  &none  &none  &none  &none
-                             &trans        &kp LC(F14)  &kp LC(F13)    &none  &none  &none
+       &bt BT_CLR  &bt BT_CLR_ALL  &out OUT_TOG  &none  &none    &none  &none  &none  &none  &none
+       &bt BT_PRV  &bt BT_NXT      &none         &none  &none    &none  &none  &none  &none  &none
+&to 0  &sys_reset  &bootloader     &none         &none  &none    &none  &none  &none  &none  &none  &to 0
+                                   &trans        &none  &none    &none  &none  &none
             >;
         };
 
@@ -222,10 +222,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LC(F18)  &kp LS(I)     &kp LS(HOME)  &kp LS(O)      &kp LS(F)      &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &trans       &kp LS(LEFT)  &kp LC(F17)   &kp LS(RIGHT)  &kp RET        &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &kp J        &kp LS(C)     &kp LC(F16)   &kp LS(V)      &kp LC(F15)    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                   &trans        &kp LC(F12)    &kp LC(F11)    &trans  &trans  &trans
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&to 0  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &to 0
+                     &none  &none  &none    &none  &none  &none
             >;
         };
 
