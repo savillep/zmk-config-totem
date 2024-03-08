@@ -110,7 +110,7 @@
             bindings = <
                           &kp Q    &kp W        &kp F                        &kp P                 &kp B                       &kp J                 &kp L                 &kp U                              &kp Y    &kp SEMI
                           &lt 4 A  &lt 3 R      &lt 2 S                      &lt 1 T               &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E                            &lt 3 I  &lt 5 O
-&kp LS(LA(LEFT_CONTROL))  &kp Z    &mt K_CUT X  &mt K_COPY C                 &mt LEFT_ALT D        &mt K_PASTE V               &kp K                 &mt LEFT_ALT H        &kp COMMA                          &kp DOT  &kp FSLH  &kp BACKSLASH
+&kp LS(LA(LEFT_CONTROL))  &kp Z    &mt K_CUT X  &mt K_COPY C                 &mt LEFT_ALT D        &mt K_PASTE V               &kp K                 &mt LEFT_ALT H        &kp COMMA                          &kp DOT  &kp FSLH  &kp RET
                                                 &mt LS(LEFT_CONTROL) DELETE  &mt LEFT_CONTROL RET  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &mt LS(LEFT_CONTROL) SINGLE_QUOTE
             >;
         };
@@ -132,10 +132,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp N1     &kp N2     &kp N3          &kp N4                &kp NUMBER_5        &kp N6             &kp NUMBER_7           &kp N8           &kp NUMBER_9     &kp N0
-       &kp EXCL   &kp AT     &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp MINUS        &kp UNDER
-&none  &kp GRAVE  &kp TILDE  &kp HASH        &kp DOLLAR            &kp PERCENT         &kp CARET          &kp AMPERSAND          &kp ASTERISK     &kp RIGHT_BRACE  &kp PLUS   &kp EQUAL
-                             &trans          &trans                &trans              &trans             &trans                 &trans
+       &kp CARET  &none      &none             &kp EQUAL          &none          &none          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &kp ASTERISK
+       &kp EXCL   &kp AT     &kp HASH          &kp DOLLAR         &kp PERCENT    &kp PIPE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDER
+&none  &kp GRAVE  &kp TILDE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &none          &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &trans        &none
+                             &trans            &trans             &trans         &trans         &trans                &trans
             >;
         };
 
@@ -156,9 +156,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &none  &kp PAGE_UP  &kp ESCAPE      &kp PAGE_DOWN     &none         &none             &kp N7                 &kp N8                    &kp N9        &kp EQUAL
-        &none  &kp LEFT     &kp UP_ARROW    &kp RIGHT         &kp ESCAPE    &kp LEFT_GUI      &kp NUMBER_4           &kp N5                    &kp NUMBER_6  &kp MINUS
-&trans  &none  &kp HOME     &kp DOWN_ARROW  &mt LEFT_ALT END  &none         &kp LS(LEFT_GUI)  &mt LEFT_ALT NUMBER_1  &kp N2                    &kp NUMBER_3  &kp SLASH  &kp ASTRK
+        &none  &kp PAGE_UP  &kp ESCAPE      &kp PAGE_DOWN     &none         &none             &kp N7                 &kp N8                    &kp N9        &none
+        &none  &kp LEFT     &kp UP_ARROW    &lt 1 RIGHT       &kp ESCAPE    &kp LEFT_GUI      &kp NUMBER_4           &kp N5                    &kp NUMBER_6  &none
+&trans  &none  &kp HOME     &kp DOWN_ARROW  &mt LEFT_ALT END  &none         &kp LS(LEFT_GUI)  &mt LEFT_ALT NUMBER_1  &kp N2                    &kp NUMBER_3  &none  &none
                             &trans          &trans            &trans        &trans            &mt LEFT_CONTROL N0    &mt LS(LEFT_CONTROL) DOT
             >;
         };
