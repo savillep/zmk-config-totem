@@ -133,8 +133,8 @@
 
             bindings = <
               &kp CARET  &none      &kp ESCAPE        &kp EQUAL          &kp LEFT_ARROW    &kp RIGHT_ARROW  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &kp ASTERISK
-              &kp EXCL   &kp AT     &kp HASH          &kp DOLLAR         &kp PERCENT       &kp PIPE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDER
-&kp CAPSLOCK  &kp GRAVE  &kp TILDE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp COLON         &kp BACKSLASH    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &trans        &none
+              &kp EXCL   &kp AT     &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp COLON         &kp PIPE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDER
+&kp CAPSLOCK  &kp GRAVE  &kp TILDE  &kp HASH          &kp DOLLAR         &kp PERCENT       &kp BACKSLASH    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &trans        &none
                                     &trans            &trans             &trans            &trans           &trans                &trans
             >;
         };
@@ -157,7 +157,7 @@
 
             bindings = <
         &none  &kp PAGE_UP  &kp ESCAPE      &kp PAGE_DOWN     &none         &none             &kp N7                 &kp N8                    &kp N9        &none
-        &none  &kp LEFT     &kp UP_ARROW    &lt 1 RIGHT       &kp ESCAPE    &kp LEFT_GUI      &kp NUMBER_4           &kp N5                    &kp NUMBER_6  &none
+        &none  &kp LEFT     &kp UP_ARROW    &kp RIGHT_ARROW   &kp ESCAPE    &kp LEFT_GUI      &kp NUMBER_4           &kp N5                    &kp NUMBER_6  &none
 &trans  &none  &kp HOME     &kp DOWN_ARROW  &mt LEFT_ALT END  &none         &kp LS(LEFT_GUI)  &mt LEFT_ALT NUMBER_1  &kp N2                    &kp NUMBER_3  &none  &none
                             &trans          &trans            &trans        &trans            &mt LEFT_CONTROL N0    &mt LS(LEFT_CONTROL) DOT
             >;
