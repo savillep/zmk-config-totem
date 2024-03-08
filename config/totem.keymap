@@ -42,7 +42,7 @@
         combo_tvp {
             timeout-ms = <100>;
             key-positions = <11 12 13>;
-            bindings = <&tog 4>;
+            bindings = <&tog 6>;
         };
 
         Enter {
@@ -109,7 +109,7 @@
 
             bindings = <
                           &kp Q    &kp W        &kp F                        &kp P                 &kp B                       &kp J                 &kp L                 &kp U                              &kp Y    &kp SEMI
-                          &lt 4 A  &lt 3 R      &lt 2 S                      &lt 1 T               &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E                            &lt 3 I  &lt 5 O
+                          &lt 6 A  &lt 3 R      &lt 2 S                      &lt 1 T               &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E                            &lt 3 I  &lt 5 O
 &kp LS(LA(LEFT_CONTROL))  &kp Z    &mt K_CUT X  &mt K_COPY C                 &mt LEFT_ALT D        &mt K_PASTE V               &kp K                 &mt LEFT_ALT H        &kp COMMA                          &kp DOT  &kp FSLH  &kp RET
                                                 &mt LS(LEFT_CONTROL) DELETE  &mt LEFT_CONTROL RET  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &mt LS(LEFT_CONTROL) SINGLE_QUOTE
             >;
@@ -132,10 +132,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp CARET  &none      &none             &kp EQUAL          &none          &none          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &kp ASTERISK
-       &kp EXCL   &kp AT     &kp HASH          &kp DOLLAR         &kp PERCENT    &kp PIPE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDER
-&none  &kp GRAVE  &kp TILDE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &none          &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &trans        &none
-                             &trans            &trans             &trans         &trans         &trans                &trans
+       &kp CARET  &none      &kp ESCAPE        &kp EQUAL          &kp LEFT_ARROW    &kp RIGHT_ARROW  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &kp ASTERISK
+       &kp EXCL   &kp AT     &kp HASH          &kp DOLLAR         &kp PERCENT       &kp PIPE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDER
+&none  &kp GRAVE  &kp TILDE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp CAPS          &kp BACKSLASH    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &trans        &none
+                             &trans            &trans             &trans            &trans           &trans                &trans
             >;
         };
 
@@ -180,34 +180,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LA(LC(PAGE_DOWN))    &none     &kp F7  &kp F8  &kp F9  &kp F12
-       &none  &none       &none              &none            &kp LG(LS(S))            &none     &kp F4  &kp F5  &kp F6  &kp F11
-&to 4  &none  &none       &none              &none            &kp CAPS                 &kp CAPS  &kp F1  &kp F2  &kp F3  &kp F10  &to 5
-                          &trans             &trans           &trans                   &trans    &trans  &trans
-            >;
-        };
-
-        system {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "TVP 1";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃ NEXT FILE ┃ MARK IN   ┃ ROTATE    ┃ MARK OUT  ┃ SHOW SNAP ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃ TVP II    ┃ LEFT      ┃ PAN       ┃ RIGHT     ┃ PLAY/FLIP ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃ FULLSCR   ┃ SHIFT     ┃ COPY      ┃ DELETE    ┃ PASTE     ┃ IMG MARK  ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃ UNDO/SAVE ┃  SEL/MOV  ┃   ┃           ┃           ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
-            bindings = <
-       &bt BT_CLR  &bt BT_CLR_ALL  &out OUT_TOG  &none  &none    &none  &none  &none  &none  &none
-       &bt BT_PRV  &bt BT_NXT      &none         &none  &none    &none  &none  &none  &none  &none
-&to 0  &sys_reset  &bootloader     &none         &none  &none    &none  &none  &none  &none  &none  &to 0
-                                   &trans        &none  &none    &none  &none  &none
+       &none  &none       &none         &none            &kp LA(LC(PAGE_DOWN))    &none   &kp F7  &kp F8  &kp F9  &kp F12
+       &none  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp LG(LS(S))            &none   &kp F4  &kp F5  &kp F6  &kp F11
+&none  &none  &none       &none         &none            &none                    &none   &kp F1  &kp F2  &kp F3  &kp F10  &none
+                          &trans        &trans           &trans                   &trans  &trans  &trans
             >;
         };
 
@@ -230,8 +206,32 @@
             bindings = <
        &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
        &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&to 0  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &to 0
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
                      &none  &none  &none    &none  &none  &none
+            >;
+        };
+
+        system {
+            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+
+            label = "TVP 1";
+
+            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+            //             ┃ NEXT FILE ┃ MARK IN   ┃ ROTATE    ┃ MARK OUT  ┃ SHOW SNAP ┃   ┃           ┃           ┃           ┃           ┃           ┃
+            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+            //             ┃ TVP II    ┃ LEFT      ┃ PAN       ┃ RIGHT     ┃ PLAY/FLIP ┃   ┃           ┃           ┃           ┃           ┃           ┃
+            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+            // ┃ FULLSCR   ┃ SHIFT     ┃ COPY      ┃ DELETE    ┃ PASTE     ┃ IMG MARK  ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+            //                                     ┃           ┃ UNDO/SAVE ┃  SEL/MOV  ┃   ┃           ┃           ┃           ┃
+            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+
+            bindings = <
+       &bt BT_CLR  &bt BT_CLR_ALL  &out OUT_TOG  &none  &none    &none  &none  &none  &none  &none
+       &bt BT_PRV  &bt BT_NXT      &none         &none  &none    &none  &none  &none  &none  &none
+&none  &sys_reset  &bootloader     &none         &none  &none    &none  &none  &none  &none  &none  &none
+                                   &trans        &none  &none    &none  &none  &none
             >;
         };
 
