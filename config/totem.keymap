@@ -26,7 +26,7 @@
     quick-tap-ms = <200>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <300>;
+    tapping-term-ms = <275>;
 };
 
 / {
@@ -47,7 +47,7 @@
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <16 18>;
+            key-positions = <27 28>;
         };
 
         combo_esc {
