@@ -112,10 +112,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                          &kp Q    &kp W        &kp F                      &kp P                    &kp B                       &kp J                 &kp L                 &kp U                       &kp Y    &kp BACKSPACE
-                          &lt 4 A  &lt 3 R      &lt 2 S                    &lt 1 T                  &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E                     &lt 3 I  &lt 5 O
-&kp LS(LA(LEFT_CONTROL))  &kp Z    &mt K_CUT X  &mt K_COPY C               &mt LEFT_ALT D           &mt K_PASTE V               &kp K                 &mt LEFT_ALT H        &kp COMMA                   &kp DOT  &kp FSLH       &kp RET
-                                                &mt LEFT_ALT SINGLE_QUOTE  &mt LEFT_CONTROL DELETE  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &mt LEFT_ALT DOUBLE_QUOTES
+                          &kp Q    &kp W    &kp F                      &kp P                    &kp B                       &kp J                 &kp L                 &kp U                       &kp Y    &kp BACKSPACE
+                          &lt 4 A  &lt 3 R  &lt 2 S                    &lt 1 T                  &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E                     &lt 3 I  &lt 5 O
+&kp LS(LA(LEFT_CONTROL))  &kp Z    &kp X    &kp C                      &mt LEFT_ALT D           &kp V                       &kp K                 &mt LEFT_ALT H        &kp COMMA                   &kp DOT  &kp FSLH       &kp RET
+                                            &mt LEFT_ALT SINGLE_QUOTE  &mt LEFT_CONTROL DELETE  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &mt LEFT_ALT DOUBLE_QUOTES
             >;
         };
 
@@ -184,10 +184,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none  &none       &none         &none            &kp LA(LC(PAGE_DOWN))    &none   &kp F7  &kp F8  &kp F9  &kp F12
-       &none  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp LG(LS(S))            &none   &kp F4  &kp F5  &kp F6  &kp F11
-&none  &none  &none       &none         &none            &none                    &none   &kp F1  &kp F2  &kp F3  &kp F10  &none
-                          &trans        &trans           &trans                   &trans  &trans  &trans
+       &none  &none       &none             &none            &kp LA(LC(PAGE_DOWN))    &none   &kp F7  &kp F8  &kp F9  &kp F12
+       &none  &kp K_MUTE  &kp C_VOL_DN      &kp C_VOLUME_UP  &kp LG(LS(S))            &none   &kp F4  &kp F5  &kp F6  &kp F11
+&none  &none  &kp K_BACK  &kp K_PLAY_PAUSE  &kp K_FORWARD    &none                    &none   &kp F1  &kp F2  &kp F3  &kp F10  &none
+                          &trans            &trans           &trans                   &trans  &trans  &trans
             >;
         };
 
