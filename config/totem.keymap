@@ -13,7 +13,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
 #define NAV  1
@@ -36,7 +35,7 @@
         combo_tvp {
             timeout-ms = <100>;
             key-positions = <11 12 13>;
-            bindings = <&tog 6>;
+            bindings = <&tog 5>;
         };
 
         combo_enter {
@@ -113,8 +112,8 @@
 
             bindings = <
                           &kp Q    &kp W    &kp F                      &kp P                    &kp B                       &kp J                 &kp L                 &kp U                       &kp Y    &kp BACKSPACE
-                          &lt 4 A  &lt 3 R  &lt 2 S                    &lt 1 T                  &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E                     &lt 3 I  &lt 5 O
-&kp LS(LA(LEFT_CONTROL))  &kp Z    &kp X    &kp C                      &mt LEFT_ALT D           &kp V                       &kp K                 &mt LEFT_ALT H        &kp COMMA                   &kp DOT  &kp FSLH       &kp RET
+                          &lt 4 A  &lt 3 R  &lt 2 S                    &lt 1 T                  &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E                     &lt 3 I  &lt 4 O
+&kp LS(LA(LEFT_CONTROL))  &kp Z    &kp X    &kp C                      &mt LEFT_ALT D           &kp V                       &kp K                 &mt LEFT_ALT H        &kp COMMA                   &kp DOT  &kp FSLH       &lt 5 RET
                                             &mt LEFT_ALT SINGLE_QUOTE  &mt LEFT_CONTROL DELETE  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &mt LEFT_ALT DOUBLE_QUOTES
             >;
         };
@@ -167,6 +166,30 @@
             >;
         };
 
+        num_row {
+            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+
+            label = "TVP 2";
+
+            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+            //             ┃ SOLO      ┃ TOGGLE IN ┃ RESET ROT ┃ TOGGLE OUT┃ TAKE SNAP ┃   ┃           ┃           ┃           ┃           ┃           ┃
+            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+            //             ┃ ---       ┃ LAST KEY  ┃ NEW KEY   ┃ NEXT KEY  ┃ ENTER     ┃   ┃           ┃           ┃           ┃           ┃           ┃
+            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+            // ┃           ┃ FULLSCR   ┃ CPY2BRUSH ┃ DEL HEAD  ┃ PSTinPLACE┃ BOOK MARK ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+            //                                     ┃           ┃ REDO/SAV1 ┃TRANS/WARP ┃   ┃           ┃           ┃           ┃
+            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+
+            bindings = <
+       &none         &none         &none         &none         &none     &none         &kp PLUS      &kp MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE
+       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7        &kp N8     &kp N9           &kp N0
+&none  &none         &none         &none         &none         &none     &none         &kp KP_EQUAL  &none      &kp KP_DOT       &none          &none
+                                   &trans        &trans        &trans    &trans        &trans        &trans
+            >;
+        };
+
         adj_f_keys {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
@@ -191,27 +214,12 @@
             >;
         };
 
-        tvp2_layer {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "TVP 2";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃ SOLO      ┃ TOGGLE IN ┃ RESET ROT ┃ TOGGLE OUT┃ TAKE SNAP ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃ ---       ┃ LAST KEY  ┃ NEW KEY   ┃ NEXT KEY  ┃ ENTER     ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃           ┃ FULLSCR   ┃ CPY2BRUSH ┃ DEL HEAD  ┃ PSTinPLACE┃ BOOK MARK ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃ REDO/SAV1 ┃TRANS/WARP ┃   ┃           ┃           ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
+        bt_sys {
             bindings = <
-       &none  &none  &none   &none                 &none     &none   &none           &none           &none            &none
-       &none  &none  &none   &kp LS(LEFT_CONTROL)  &none     &none   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &none
-&none  &none  &none  &none   &none                 &none     &none   &none           &kp DOWN_ARROW  &none            &none  &none
-                     &trans  &trans                &trans    &trans  &trans          &trans
+       &bt BT_CLR_ALL  &none        &none       &none       &none    &none  &none  &none  &none  &none
+       &sys_reset      &bootloader  &bt BT_PRV  &bt BT_NXT  &none    &none  &none  &none  &none  &none
+&none  &none           &none        &bt BT_CLR  &none       &none    &none  &none  &none  &none  &none  &none
+                                    &none       &none       &none    &none  &none  &none
             >;
         };
 
@@ -232,19 +240,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &bt BT_CLR  &bt BT_CLR_ALL  &out OUT_TOG  &none   &none     &none   &none   &none   &none  &none
-       &bt BT_PRV  &bt BT_NXT      &none         &none   &none     &none   &none   &none   &none  &none
-&none  &sys_reset  &bootloader     &none         &none   &none     &none   &none   &none   &none  &none  &none
-                                   &trans        &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
         };
     };
