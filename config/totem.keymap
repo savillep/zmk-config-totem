@@ -166,39 +166,39 @@
             label = "TMUX_PANE_LEFT";
         };
 
-        tmux_pane_right: tmux_win_right {
+        tmux_pane_right: tmux_pane_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp RIGHT_ARROW>;
-            label = "TMUX_WIN_RIGHT";
+            label = "TMUX_PANE_RIGHT";
         };
 
-        tmux_pane_up: tmux_win_up {
+        tmux_pane_up: tmux_pane_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp UP_ARROW>;
-            label = "TMUX_WIN_UP";
+            label = "TMUX_PANE_UP";
         };
 
-        tmux_pane_down: tmux_win_down {
+        tmux_pane_down: tmux_pane_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp DOWN_ARROW>;
-            label = "TMUX_WIN_DOWN";
+            label = "TMUX_PANE_DOWN";
         };
 
-        tmux_win_prev: tmux_screen_left {
+        tmux_win_prev: tmux_win_prev {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp P>;
-            label = "TMUX_SCREEN_LEFT";
+            label = "TMUX_WIN_PREV";
         };
 
-        tmux_win_next: tmux_screen_right {
+        tmux_win_next: tmux_win_next {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp N>;
-            label = "TMUX_SCREEN_RIGHT";
+            label = "TMUX_WIN_NEXT";
         };
 
         tog_monitor_src: tog_monitor_src {
