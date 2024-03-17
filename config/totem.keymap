@@ -33,13 +33,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_L5 {
-            timeout-ms = <100>;
-            key-positions = <22 23 24>;
-            bindings = <&to 5>;
-            layers = <0>;
-        };
-
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <16 17>;
@@ -61,13 +54,6 @@
             key-positions = <24 23>;
         };
 
-        combo_L4 {
-            bindings = <&to 4>;
-            key-positions = <27 28 29>;
-            timeout-ms = <100>;
-            layers = <0>;
-        };
-
         combo_L2 {
             bindings = <&tog 2>;
             key-positions = <16 17 18>;
@@ -87,36 +73,32 @@
             layers = <0>;
         };
 
-        tmux_win_left {
+        tmux_pane_left {
             bindings = <&tmux_pane_left>;
             key-positions = <27 11>;
-            layers = <0>;
         };
 
-        tmux_win_right {
+        tmux_pane_right {
             bindings = <&tmux_pane_right>;
             key-positions = <27 13>;
-            layers = <0>;
         };
 
-        tmux_win_up {
+        tmux_pane_up {
             bindings = <&tmux_pane_up>;
             key-positions = <27 12>;
-            layers = <0>;
         };
 
-        tmux_win_down {
+        tmux_pane_down {
             bindings = <&tmux_pane_down>;
             key-positions = <27 23>;
-            layers = <0>;
         };
 
-        tmux_screen_left {
+        tmux_win_left {
             bindings = <&tmux_win_prev>;
             key-positions = <35 11>;
         };
 
-        tmux_screen_right {
+        tmux_win_right {
             bindings = <&tmux_win_next>;
             key-positions = <35 13>;
         };
