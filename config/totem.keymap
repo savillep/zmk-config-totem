@@ -76,13 +76,13 @@
 
         tmux_split_v {
             bindings = <&tmux_split_v>;
-            key-positions = <25 34>;
+            key-positions = <25 33>;
             layers = <0>;
         };
 
         tmux_split_h {
-            bindings = <&none>;
-            key-positions = <35 27>;
+            bindings = <&tmux_split_h>;
+            key-positions = <27 36>;
             layers = <0>;
         };
 
