@@ -105,7 +105,7 @@
         };
 
         tmux_win_down {
-            bindings = <&tmux_win_up>;
+            bindings = <&tmux_win_down>;
             key-positions = <27 23>;
             layers = <0>;
         };
