@@ -36,6 +36,7 @@
             timeout-ms = <100>;
             key-positions = <11 12 13>;
             bindings = <&tog 5>;
+            layers = <0>;
         };
 
         combo_enter {
@@ -214,7 +215,7 @@
        &none       &none        &none       &none           &none    &none  &none  &none  &none  &none
        &sys_reset  &bootloader  &bt BT_PRV  &bt BT_NXT      &kp A    &none  &none  &none  &none  &none
 &none  &none       &none        &bt BT_CLR  &bt BT_CLR_ALL  &none    &none  &none  &none  &none  &none  &none
-                                &none       &none           &none    &none  &none  &none
+                                &none       &none           &to 0    &none  &none  &none
             >;
         };
 
@@ -238,7 +239,7 @@
        &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
        &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                     &none  &none  &none    &none  &none  &none
+                     &none  &none  &to 0    &none  &none  &none
             >;
         };
     };
