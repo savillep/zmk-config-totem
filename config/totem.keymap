@@ -90,7 +90,7 @@
 
         tmux_pane_down {
             bindings = <&tmux_pane_down>;
-            key-positions = <27 23>;
+            key-positions = <27 23 23>;
         };
 
         tmux_win_left {
