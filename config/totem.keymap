@@ -163,13 +163,6 @@
             label = "TMUX_PANE_UP";
         };
 
-        tmux_pane_down: tmux_pane_down {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp DOWN_ARROW>;
-            label = "TMUX_PANE_DOWN";
-        };
-
         tmux_win_prev: tmux_win_prev {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -189,6 +182,13 @@
             #binding-cells = <0>;
             bindings = <&kp LC(LA(PAGE_DOWN))>;
             label = "TOG_MONITOR_SRC";
+        };
+
+        tmux_pane_down: tmux_pane_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp DOWN_ARROW>;
+            label = "TMUX_PANE_DOWN";
         };
     };
 
