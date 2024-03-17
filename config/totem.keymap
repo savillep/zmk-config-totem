@@ -77,11 +77,47 @@
         tmux_split_v {
             bindings = <&tmux_split_v>;
             key-positions = <25 34>;
+            layers = <0>;
         };
 
         tmux_split_h {
             bindings = <&none>;
             key-positions = <35 27>;
+            layers = <0>;
+        };
+
+        tmux_win_left {
+            bindings = <&tmux_win_left>;
+            key-positions = <27 11>;
+            layers = <0>;
+        };
+
+        tmux_win_right {
+            bindings = <&tmux_win_right>;
+            key-positions = <27 13>;
+            layers = <0>;
+        };
+
+        tmux_win_up {
+            bindings = <&tmux_win_up>;
+            key-positions = <27 12>;
+            layers = <0>;
+        };
+
+        tmux_win_down {
+            bindings = <&tmux_win_up>;
+            key-positions = <27 23>;
+            layers = <0>;
+        };
+
+        tmux_screen_left {
+            bindings = <&tmux_screen_left>;
+            key-positions = <35 11>;
+        };
+
+        tmux_screen_right {
+            bindings = <&tmux_screen_right>;
+            key-positions = <35 13>;
         };
     };
 
@@ -104,16 +140,65 @@
         PrScr: PrScr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(S) &kp LEFT_GUI>, <&macro_press>;
-
+            bindings = <&kp LS(S) &kp LEFT_GUI>;
             label = "PRSCR";
         };
 
         tmux_split_v: tmux_split_v {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp V>;
+            bindings = <&kp LC(B) &kp V>;
             label = "TMUX_SPLIT_V";
+        };
+
+        tmux_split_h: tmux_split_h {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp H>;
+            label = "TMUX_SPLIT_H";
+            wait-ms = <0>;
+        };
+
+        tmux_win_left: tmux_win_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp LEFT_ARROW>;
+            label = "TMUX_WIN_LEFT";
+        };
+
+        tmux_win_right: tmux_win_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp RIGHT_ARROW>;
+            label = "TMUX_WIN_RIGHT";
+        };
+
+        tmux_win_up: tmux_win_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp UP_ARROW>;
+            label = "TMUX_WIN_UP";
+        };
+
+        tmux_win_down: tmux_win_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp DOWN_ARROW>;
+            label = "TMUX_WIN_DOWN";
+        };
+
+        tmux_screen_left: tmux_screen_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_ARROW)>;
+            label = "TMUX_SCREEN_LEFT";
+        };
+
+        tmux_screen_right: tmux_screen_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(RIGHT_ARROW)>;
+            label = "TMUX_SCREEN_RIGHT";
         };
     };
 
