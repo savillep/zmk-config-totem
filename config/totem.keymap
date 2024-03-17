@@ -140,21 +140,21 @@
         PrScr: PrScr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(S) &kp LEFT_GUI>;
+            bindings = <&kp LS(LG(S))>;
             label = "PRSCR";
         };
 
         tmux_split_v: tmux_split_v {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp V>;
+            bindings = <&kp LC(B) &kp PERCENT>;
             label = "TMUX_SPLIT_V";
         };
 
         tmux_split_h: tmux_split_h {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp H>;
+            bindings = <&kp LC(B) &kp DOUBLE_QUOTES>;
             label = "TMUX_SPLIT_H";
             wait-ms = <0>;
         };
@@ -162,28 +162,28 @@
         tmux_win_left: tmux_win_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT_ARROW>;
+            bindings = <&kp LA(LEFT_ARROW)>;
             label = "TMUX_WIN_LEFT";
         };
 
         tmux_win_right: tmux_win_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp RIGHT_ARROW>;
+            bindings = <&kp LA(RIGHT_ARROW)>;
             label = "TMUX_WIN_RIGHT";
         };
 
         tmux_win_up: tmux_win_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp UP_ARROW>;
+            bindings = <&kp LA(UP_ARROW)>;
             label = "TMUX_WIN_UP";
         };
 
         tmux_win_down: tmux_win_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp DOWN_ARROW>;
+            bindings = <&kp LA(DOWN_ARROW)>;
             label = "TMUX_WIN_DOWN";
         };
 
@@ -199,6 +199,13 @@
             #binding-cells = <0>;
             bindings = <&kp LS(RIGHT_ARROW)>;
             label = "TMUX_SCREEN_RIGHT";
+        };
+
+        tog_monitor_src: tog_monitor_src {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(PAGE_DOWN))>;
+            label = "TOG_MONITOR_SRC";
         };
     };
 
@@ -305,10 +312,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                       &none          &none       &none             &none            &none     &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-                       &kp LS(LG(S))  &kp K_MUTE  &kp C_VOL_DN      &kp C_VOLUME_UP  &none     &kp F6   &kp F7   &kp F8  &kp F6  &kp F10
-&kp LC(LA(PAGE_DOWN))  &none          &kp K_BACK  &kp K_PLAY_PAUSE  &kp K_FORWARD    &none     &kp F11  &kp F12  &none   &none   &none    &none
-                                                  &trans            &trans           &trans    &trans   &trans   &trans
+                  &none   &none       &none             &none            &none     &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
+                  &PrScr  &kp K_MUTE  &kp C_VOL_DN      &kp C_VOLUME_UP  &none     &kp F6   &kp F7   &kp F8  &kp F6  &kp F10
+&tog_monitor_src  &none   &kp K_BACK  &kp K_PLAY_PAUSE  &kp K_FORWARD    &none     &kp F11  &kp F12  &none   &none   &none    &none
+                                      &trans            &trans           &trans    &trans   &trans   &trans
             >;
         };
 
