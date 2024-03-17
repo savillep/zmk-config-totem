@@ -159,11 +159,11 @@
             wait-ms = <0>;
         };
 
-        tmux_pane_left: tmux_win_left {
+        tmux_pane_left: tmux_pane_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp LEFT_ARROW>;
-            label = "TMUX_WIN_LEFT";
+            label = "TMUX_PANE_LEFT";
         };
 
         tmux_pane_right: tmux_win_right {
