@@ -105,21 +105,6 @@
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
-        };
-
         PrScr: PrScr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -189,15 +174,6 @@
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp DOWN_ARROW>;
             label = "TMUX_PANE_DOWN";
-        };
-    };
-
-    behaviors {
-        Cut: Cut {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CUT";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL>, <&kp X>;
         };
     };
 
