@@ -177,7 +177,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_TO_LAYER3";
             #binding-cells = <0>;
-            bindings = <&kp V>, <&to 3>;
+            bindings = <&kp B>, <&kp B>, <&td_to_layer3>;
 
             tapping-term-ms = <150>;
         };
@@ -205,9 +205,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                          &kp Q  &kp W  &kp F                &kp P                    &kp B                       &kp J                 &kp L                 &kp U      &kp Y    &kp BACKSPACE
+                          &kp Q  &kp W  &kp F                &kp P                    &td_to_layer3               &kp J                 &kp L                 &kp U      &kp Y    &kp BACKSPACE
                           &kp A  &kp R  &lt 2 S              &lt 1 T                  &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E    &kp I    &kp O
-&kp LS(LA(LEFT_CONTROL))  &kp Z  &kp X  &kp C                &mt LEFT_ALT D           &td_to_layer3               &kp K                 &mt LEFT_ALT H        &kp COMMA  &kp DOT  &kp FSLH       &kp RETURN
+&kp LS(LA(LEFT_CONTROL))  &kp Z  &kp X  &kp C                &mt LEFT_ALT D           &kp V                       &kp K                 &mt LEFT_ALT H        &kp COMMA  &kp DOT  &kp FSLH       &kp RETURN
                                         &mt LEFT_ALT ESCAPE  &mt LEFT_CONTROL DELETE  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &kp RET
             >;
         };
@@ -277,18 +277,18 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                  &none   &none       &kp NUMBER_3      &none            &to 5    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-                  &PrScr  &kp K_MUTE  &kp C_VOL_DN      &kp C_VOLUME_UP  &to 4    &kp F6   &kp F7   &kp F8  &kp F6  &kp F10
-&tog_monitor_src  &none   &kp K_BACK  &kp K_PLAY_PAUSE  &kp K_FORWARD    &to 0    &kp F11  &kp F12  &none   &none   &none    &none
-                                      &trans            &trans           &to 0    &trans   &trans   &trans
+                  &none   &none       &kp NUMBER_3      &none            &to 0     &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
+                  &PrScr  &kp K_MUTE  &kp C_VOL_DN      &kp C_VOLUME_UP  &to 4     &kp F6   &kp F7   &kp F8  &kp F6  &kp F10
+&tog_monitor_src  &none   &kp K_BACK  &kp K_PLAY_PAUSE  &kp K_FORWARD    &to 5     &kp F11  &kp F12  &none   &none   &none    &none
+                                      &trans            &trans           &trans    &trans   &trans   &trans
             >;
         };
 
         bt_sys {
             bindings = <
-              &none       &none        &kp NUMBER_4  &none           &none    &none  &none  &none  &none  &none
+              &none       &none        &kp NUMBER_4  &none           &to 0    &none  &none  &none  &none  &none
               &sys_reset  &bootloader  &bt BT_PRV    &bt BT_NXT      &none    &none  &none  &none  &none  &none
-&out OUT_TOG  &none       &none        &bt BT_CLR    &bt BT_CLR_ALL  &to 0    &none  &none  &none  &none  &none  &none
+&out OUT_TOG  &none       &none        &bt BT_CLR    &bt BT_CLR_ALL  &none    &none  &none  &none  &none  &none  &none
                                        &none         &none           &none    &none  &none  &none
             >;
         };
@@ -310,9 +310,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none  &none  &kp N5  &none  &none    &none  &none  &none  &none  &none
+       &none  &none  &kp N5  &none  &to 0    &none  &none  &none  &none  &none
        &none  &none  &none   &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none   &none  &to 0    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none   &none  &none    &none  &none  &none  &none  &none  &none
                      &none   &none  &none    &none  &none  &none
             >;
         };
