@@ -178,6 +178,8 @@
             label = "TD_TO_LAYER3";
             #binding-cells = <0>;
             bindings = <&kp K>, <&to 3>;
+
+            tapping-term-ms = <100>;
         };
     };
 
