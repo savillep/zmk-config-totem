@@ -179,7 +179,7 @@
             #binding-cells = <0>;
             bindings = <&kp V>, <&to 3>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
     };
 
