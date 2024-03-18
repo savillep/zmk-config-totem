@@ -177,7 +177,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_TO_LAYER3";
             #binding-cells = <0>;
-            bindings = <&kp B>, <&kp B>, <&td_to_layer3>;
+            bindings = <&kp LA(LS(LCTRL))>, <&td_to_layer3>;
 
             tapping-term-ms = <150>;
         };
@@ -205,10 +205,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                          &kp Q  &kp W  &kp F                &kp P                    &td_to_layer3               &kp J                 &kp L                 &kp U      &kp Y    &kp BACKSPACE
-                          &kp A  &kp R  &lt 2 S              &lt 1 T                  &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E    &kp I    &kp O
-&kp LS(LA(LEFT_CONTROL))  &kp Z  &kp X  &kp C                &mt LEFT_ALT D           &kp V                       &kp K                 &mt LEFT_ALT H        &kp COMMA  &kp DOT  &kp FSLH       &kp RETURN
-                                        &mt LEFT_ALT ESCAPE  &mt LEFT_CONTROL DELETE  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &kp RET
+               &kp Q  &kp W  &kp F                &kp P                    &kp B                       &kp J                 &kp L                 &kp U      &kp Y    &kp BACKSPACE
+               &kp A  &kp R  &lt 2 S              &lt 1 T                  &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E    &kp I    &kp O
+&td_to_layer3  &kp Z  &kp X  &kp C                &mt LEFT_ALT D           &kp V                       &kp K                 &mt LEFT_ALT H        &kp COMMA  &kp DOT  &kp FSLH       &kp RETURN
+                             &mt LEFT_ALT ESCAPE  &mt LEFT_CONTROL DELETE  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &kp RET
             >;
         };
 
