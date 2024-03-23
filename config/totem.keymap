@@ -205,10 +205,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                          &kp Q  &kp W  &kp F                &kp P                    &kp B                       &kp J                 &kp L                 &kp U      &kp Y    &kp BACKSPACE
-                          &kp A  &kp R  &lt 2 S              &lt 1 T                  &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E    &kp I    &kp O
-&kp LA(LS(LEFT_CONTROL))  &kp Z  &kp X  &kp C                &mt LEFT_ALT D           &kp V                       &kp K                 &mt LEFT_ALT H        &kp COMMA  &kp DOT  &kp FSLH       &lt 3 RET
-                                        &mt LEFT_ALT ESCAPE  &mt LEFT_CONTROL DELETE  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &kp RET
+                          &kp Q  &kp W  &kp F                &kp P                    &kp B                       &kp J                 &kp L                 &kp U                &kp Y    &kp BACKSPACE
+                          &kp A  &kp R  &lt 2 S              &lt 1 T                  &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E              &kp I    &kp O
+&kp LA(LS(LEFT_CONTROL))  &kp Z  &kp X  &lt 5 C              &mt LEFT_ALT D           &kp V                       &kp K                 &mt LEFT_ALT H        &lt 5 COMMA          &kp DOT  &kp FSLH       &lt 3 RET
+                                        &mt LEFT_ALT ESCAPE  &mt LEFT_CONTROL DELETE  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &mt LEFT_ALT ESCAPE
             >;
         };
 
@@ -232,7 +232,7 @@
             &kp CARET  &kp SEMI   &kp AMPS          &kp ASTRK          &kp LEFT_ARROW    &kp RIGHT_ARROW  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &kp ASTERISK
             &kp EXCL   &kp AT     &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp COLON         &kp PIPE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDER
 &caps_word  &kp GRAVE  &kp TILDE  &kp HASH          &kp DOLLAR         &kp PERCENT       &kp BACKSLASH    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &trans        &none
-                                  &trans            &trans             &trans            &trans           &trans                &trans
+                                  &trans            &trans             &trans            &trans           &trans                &none
             >;
         };
 
@@ -253,10 +253,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &none  &kp PAGE_UP  &kp ESCAPE      &kp PAGE_DOWN    &none     &none             &kp N7                         &kp N8            &kp N9        &none
-        &none  &kp LEFT     &kp UP_ARROW    &kp RIGHT_ARROW  &none     &kp LEFT_GUI      &mt LS(LEFT_CONTROL) NUMBER_4  &kp N5            &kp NUMBER_6  &none
-&trans  &none  &kp HOME     &kp DOWN_ARROW  &kp END          &none     &kp LS(LEFT_GUI)  &mt LEFT_ALT NUMBER_1          &kp N2            &kp NUMBER_3  &none  &none
-                            &trans          &trans           &trans    &trans            &mt LEFT_CONTROL N0            &mt LEFT_ALT DOT
+        &none  &kp PAGE_UP  &kp ESCAPE      &kp PAGE_DOWN    &none     &none             &kp N7                         &kp N8  &kp N9        &none
+        &none  &kp LEFT     &kp UP_ARROW    &kp RIGHT_ARROW  &none     &kp LEFT_GUI      &mt LS(LEFT_CONTROL) NUMBER_4  &kp N5  &kp NUMBER_6  &kp KP_DOT
+&trans  &none  &kp HOME     &kp DOWN_ARROW  &kp END          &none     &kp LS(LEFT_GUI)  &mt LEFT_ALT NUMBER_1          &kp N2  &kp NUMBER_3  &none       &none
+                            &trans          &trans           &trans    &trans            &mt LEFT_CONTROL N0            &trans
             >;
         };
 
@@ -288,8 +288,8 @@
             bindings = <
               &none       &none        &kp NUMBER_4  &none           &none    &none  &none  &none  &none  &none
               &sys_reset  &bootloader  &bt BT_PRV    &bt BT_NXT      &none    &none  &none  &none  &none  &none
-&out OUT_TOG  &none       &none        &bt BT_CLR    &bt BT_CLR_ALL  &none    &none  &none  &none  &none  &none  &to 0
-                                       &none         &none           &none    &none  &none  &none
+&out OUT_TOG  &none       &none        &bt BT_CLR    &bt BT_CLR_ALL  &none    &none  &none  &none  &none  &none  &none
+                                       &none         &none           &none    &none  &none  &to 0
             >;
         };
 
@@ -310,10 +310,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none  &none  &kp N5  &none  &none    &none  &none  &none  &none  &none
-       &none  &none  &none   &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none   &none  &none    &none  &none  &none  &none  &none  &to 0
-                     &none   &none  &none    &none  &none  &none
+       &none         &none         &none         &none         &none     &none         &none   &none   &none   &none
+       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp KP_NUMBER_0
+&none  &none         &none         &none         &none         &none     &none         &none   &none   &none   &none            &none
+                                   &none         &none         &trans    &trans        &none   &to 0
             >;
         };
     };
