@@ -53,13 +53,13 @@
 
         tmux_split_v {
             bindings = <&tmux_split_v>;
-            key-positions = <25 33>;
+            key-positions = <25 27>;
             layers = <0>;
         };
 
         tmux_split_h {
             bindings = <&tmux_split_h>;
-            key-positions = <27 36>;
+            key-positions = <27 24>;
             layers = <0>;
         };
 
@@ -85,12 +85,12 @@
 
         tmux_win_left {
             bindings = <&tmux_win_prev>;
-            key-positions = <35 11>;
+            key-positions = <11 26>;
         };
 
         tmux_win_right {
             bindings = <&tmux_win_next>;
-            key-positions = <35 13>;
+            key-positions = <13 26>;
         };
 
         rhs_tab {
