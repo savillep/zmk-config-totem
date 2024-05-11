@@ -220,9 +220,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q             &kp W  &kp F                &kp P                    &kp B                       &kp J                 &kp L                 &kp U                &kp Y    &kp BACKSPACE
-              &mt LEFT_SHIFT A  &kp R  &lt 2 S              &lt 1 T                  &mt LEFT_GUI G              &mt LEFT_GUI M        &lt 1 N               &lt 2 E              &kp I    &mt LEFT_SHIFT O
-&lt 3 ESCAPE  &kp Z             &kp X  &lt 5 C              &mt LEFT_ALT D           &kp V                       &kp K                 &mt LEFT_ALT H        &lt 5 COMMA          &kp DOT  &kp FSLH          &lt 3 RET
+              &kp Q             &kp D  &kp R                &kp W                    &kp B                       &kp J                 &kp F                 &kp U                &kp P    &kp SEMICOLON
+              &mt LEFT_SHIFT A  &kp S  &lt 2 H              &lt 1 T                  &mt LEFT_GUI G              &mt LEFT_GUI Y        &lt 1 N               &lt 2 E              &kp O    &mt LEFT_SHIFT I
+&lt 3 ESCAPE  &kp Z             &kp X  &lt 5 M              &mt LEFT_ALT C           &kp V                       &kp K                 &mt LEFT_ALT L        &lt 5 COMMA          &kp DOT  &kp FSLH          &lt 3 RET
                                        &mt LEFT_ALT ESCAPE  &mt LEFT_CONTROL DELETE  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &mt LEFT_ALT ESCAPE
             >;
         };
