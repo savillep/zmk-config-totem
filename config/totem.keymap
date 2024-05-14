@@ -244,7 +244,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp CARET  &kp SEMI   &kp AMPS        &kp ASTRK        &kp EQUAL        &none      &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp PLUS   &kp ASTERISK
+            &kp CARET  &kp SEMI   &kp AMPS        &kp ASTRK        &kp EQUAL        &kp RET    &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp PLUS   &kp ASTERISK
             &kp EXCL   &kp AT     &kp HASH        &kp DOLLAR       &kp PERCENT      &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDER
 &caps_word  &kp GRAVE  &kp TILDE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH    &kp PIPE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL  &kp BACKSLASH  &none
                                   &trans          &trans           &trans           &trans     &kp COLON             &none
