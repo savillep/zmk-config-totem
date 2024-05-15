@@ -45,10 +45,10 @@
         };
 
         combo_L2 {
-            bindings = <&tog 2>;
+            bindings = <&tog 1>;
             key-positions = <16 17 18>;
             timeout-ms = <100>;
-            layers = <2 0>;
+            layers = <1 0>;
         };
 
         tmux_split_v {
@@ -220,34 +220,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q  &kp W  &kp F                &kp P                    &kp B                       &kp J                 &kp L                 &kp U                &kp Y    &kp SEMICOLON
-                &kp A  &kp R  &lt 2 S              &lt 1 T                  &mt LEFT_SHIFT G            &mt LEFT_SHIFT M      &lt 1 N               &lt 2 E              &kp I    &kp O
-&lt 3 LEFT_GUI  &kp Z  &kp X  &lt 5 C              &mt LEFT_ALT D           &kp V                       &kp K                 &mt LEFT_ALT H        &lt 5 COMMA          &kp DOT  &kp FSLH       &lt 3 LEFT_GUI
-                              &mt LEFT_ALT ESCAPE  &mt LEFT_CONTROL DELETE  &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT SPACE  &mt LEFT_CONTROL TAB  &mt LEFT_ALT ESCAPE
-            >;
-        };
-
-        symbols {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "SYMBOLS";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     ˆ     ┃     &     ┃     *     ┃     '     ┃     "     ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃     Ä     ┃           ┃    SZ     ┃           ┃           ┃   ┃   MUTE    ┃   YEN     ┃   EURO    ┃  POUND    ┃     Ö     ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃           ┃  EMAIL1   ┃  EMAIL2   ┃           ┃           ┃           ┃   ┃   VOL-    ┃   VOL+    ┃   LAST    ┃   NEXT    ┃     \     ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃    GIF    ┃    ADJ    ┃   ┃           ┃           ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
-            bindings = <
-            &kp CARET  &kp SEMI   &kp AMPS        &kp ASTRK        &kp EQUAL        &kp SLASH  &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp PLUS   &kp ASTERISK
-            &kp EXCL   &kp AT     &kp HASH        &kp DOLLAR       &kp PERCENT      &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDER
-&caps_word  &kp GRAVE  &kp TILDE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH    &kp PIPE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL  &kp BACKSLASH  &none
-                                  &trans          &trans           &trans           &trans     &kp COLON             &none
+       &kp Q           &kp W           &kp F               &kp P            &kp B        &kp J         &kp L              &kp U                &kp Y            &kp SEMICOLON
+       &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHIFT T     &kp G        &kp M         &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &kp O
+&none  &kp Z           &kp X           &kp C               &kp D            &kp V        &kp K         &kp H              &kp COMMA            &kp DOT          &kp FSLH       &none
+                                       &lt 3 ESCAPE        &lt 2 BACKSPACE  &lt 1 TAB    &lt 1 RETURN  &lt 2 SPACE        &lt 3 ESCAPE
             >;
         };
 
@@ -268,10 +244,34 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &none     &kp PAGE_UP  &kp ESCAPE      &kp PAGE_DOWN    &none      &kp LEFT_GUI      &kp N7                         &kp N8  &kp N9        &none
-        &kp HOME  &kp LEFT     &kp UP_ARROW    &kp RIGHT_ARROW  &kp END    &kp LEFT_SHIFT    &mt LS(LEFT_CONTROL) NUMBER_4  &kp N5  &kp NUMBER_6  &kp KP_DOT
-&trans  &none     &none        &kp DOWN_ARROW  &none            &none      &kp LS(LEFT_GUI)  &mt LEFT_ALT NUMBER_1          &kp N2  &kp NUMBER_3  &none       &none
-                               &trans          &trans           &trans     &trans            &mt LEFT_CONTROL N0            &trans
+        &none     &kp PAGE_UP  &kp ESCAPE      &kp PAGE_DOWN    &none      &none             &kp N7                   &kp N8                      &kp N9                  &none
+        &kp HOME  &kp LEFT     &kp UP_ARROW    &kp RIGHT_ARROW  &kp END    &kp RIGHT_GUI     &mt LEFT_SHIFT NUMBER_4  &mt RIGHT_CONTROL NUMBER_5  &mt RIGHT_ALT NUMBER_6  &kp KP_DOT
+&trans  &none     &none        &kp DOWN_ARROW  &none            &none      &kp LS(LEFT_GUI)  &kp NUMBER_1             &kp N2                      &kp NUMBER_3            &none       &none
+                               &trans          &trans           &trans     &trans            &kp N0                   &trans
+            >;
+        };
+
+        symbols {
+            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+
+            label = "SYMBOLS";
+
+            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+            //             ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     ˆ     ┃     &     ┃     *     ┃     '     ┃     "     ┃
+            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+            //             ┃     Ä     ┃           ┃    SZ     ┃           ┃           ┃   ┃   MUTE    ┃   YEN     ┃   EURO    ┃  POUND    ┃     Ö     ┃
+            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+            // ┃           ┃  EMAIL1   ┃  EMAIL2   ┃           ┃           ┃           ┃   ┃   VOL-    ┃   VOL+    ┃   LAST    ┃   NEXT    ┃     \     ┃           ┃
+            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+            //                                     ┃           ┃    GIF    ┃    ADJ    ┃   ┃           ┃           ┃           ┃
+            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+
+            bindings = <
+       &kp CARET  &kp SEMI   &kp AMPS        &kp ASTRK        &kp EQUAL        &kp SLASH  &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp PLUS   &kp ASTERISK
+       &kp EXCL   &kp AT     &kp HASH        &kp DOLLAR       &kp PERCENT      &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDER
+&none  &kp GRAVE  &kp TILDE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH    &kp PIPE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL  &kp BACKSLASH  &none
+                             &trans          &trans           &trans           &trans     &trans                &trans
             >;
         };
 
