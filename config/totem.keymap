@@ -44,9 +44,9 @@
             key-positions = <13 12>;
         };
 
-        combo_L2 {
+        combo_L1 {
             bindings = <&tog 1>;
-            key-positions = <16 17 18>;
+            key-positions = <3 2>;
             timeout-ms = <100>;
             layers = <1 0>;
         };
@@ -93,23 +93,8 @@
             key-positions = <13 26>;
         };
 
-        rhs_tab {
-            bindings = <&kp TAB>;
-            key-positions = <27 28>;
-        };
-
-        lhs_alt_tab {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <24 23 22>;
-        };
-
-        rhs_alt_tab {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <27 28 29>;
-        };
-
-        lhs_tab {
-            bindings = <&kp TAB>;
+        vi_ins_mv_eol {
+            bindings = <&vi_ins_mv_eol>;
             key-positions = <24 23>;
         };
     };
@@ -184,6 +169,13 @@
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp DOWN_ARROW>;
             label = "TMUX_PANE_DOWN";
+        };
+
+        vi_ins_mv_eol: vi_ins_mv_eol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(O) &kp LS(A)>;
+            label = "VI_INS_MV_EOL";
         };
     };
 
@@ -292,10 +284,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                  &none   &none       &kp NUMBER_3      &none            &none     &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-                  &PrScr  &kp K_MUTE  &kp C_VOL_DN      &kp C_VOLUME_UP  &to 4     &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&tog_monitor_src  &none   &kp K_BACK  &kp K_PLAY_PAUSE  &kp K_FORWARD    &to 5     &kp F11  &kp F12  &none   &none   &none    &none
-                                      &trans            &trans           &trans    &trans   &trans   &trans
+       &none   &none       &kp NUMBER_3      &none            &none     &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
+       &PrScr  &kp K_MUTE  &kp C_VOL_DN      &kp C_VOLUME_UP  &to 4     &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
+&none  &none   &kp K_BACK  &kp K_PLAY_PAUSE  &kp K_FORWARD    &to 5     &kp F11  &kp F12  &none   &none   &tog_monitor_src  &none
+                           &trans            &trans           &trans    &trans   &trans   &trans
             >;
         };
 
