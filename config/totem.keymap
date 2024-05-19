@@ -45,13 +45,6 @@
             key-positions = <13 12>;
         };
 
-        combo_L1 {
-            bindings = <&tog 1>;
-            key-positions = <3 2>;
-            timeout-ms = <100>;
-            layers = <1 0>;
-        };
-
         tmux_split_v {
             bindings = <&tmux_split_v>;
             key-positions = <25 27>;
