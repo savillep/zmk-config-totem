@@ -311,10 +311,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none  &none  &none  &none  &none     &none   &none           &none           &none         &none
-       &none  &none  &none  &none  &none     &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
-&none  &none  &none  &none  &none  &none     &none   &none           &none           &none         &none            &none
-                     &none  &none  &trans    &trans  &trans          &trans
+       &none  &none  &none  &none           &none     &none   &none           &none           &none         &none
+       &none  &none  &none  &vi_ins_mv_eol  &none     &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
+&none  &none  &none  &none  &none           &none     &none   &none           &none           &none         &none            &none
+                     &none  &none           &trans    &trans  &trans          &trans
             >;
         };
     };
