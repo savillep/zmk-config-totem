@@ -206,10 +206,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q           &kp W           &kp F               &kp P            &kp B        &kp J         &kp L             &kp U               &kp Y           &kp SEMICOLON
-       &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHIFT T     &kp G        &kp M         &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &kp O
-&none  &kp Z           &kp X           &kp C               &kp D            &lt 4 V      &kp K         &kp H             &kp COMMA           &kp DOT         &lt 4 SLASH    &none
-                                       &lt 5 DELETE        &lt 2 BACKSPACE  &lt 1 TAB    &lt 1 RETURN  &lt 2 SPACE       &lt 3 ESCAPE
+       &kp Q           &kp W           &kp F               &kp P            &kp B                   &kp J                 &kp L             &kp U               &kp Y           &kp SEMICOLON
+       &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHIFT T     &mt LC(LEFT_SHIFT) G    &mt LC(LEFT_SHIFT) M  &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &kp O
+&none  &kp Z           &kp X           &kp C               &kp D            &lt 4 V                 &kp K                 &kp H             &kp COMMA           &kp DOT         &lt 4 SLASH    &none
+                                       &lt 5 DELETE        &lt 2 BACKSPACE  &lt 1 TAB               &lt 1 RETURN          &lt 2 SPACE       &lt 3 ESCAPE
             >;
         };
 
