@@ -27,7 +27,7 @@
     quick-tap-ms = <200>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <300>;
+    tapping-term-ms = <250>;
 };
 
 / {
@@ -163,13 +163,13 @@
     };
 
     behaviors {
-        td_to_layer3: td_to_layer3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_TO_LAYER3";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LS(LCTRL))>, <&td_to_layer3>;
+        mm_shift_del: mm_shift_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_SHIFT_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
-            tapping-term-ms = <150>;
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
