@@ -34,17 +34,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <16 17>;
-            layers = <0>;
-        };
-
-        combo_esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 12>;
-        };
-
         tmux_split_v {
             bindings = <&tmux_split_v>;
             key-positions = <25 27>;
@@ -59,37 +48,37 @@
 
         tmux_pane_left {
             bindings = <&tmux_pane_left>;
-            key-positions = <27 11>;
+            key-positions = <11 35>;
         };
 
         tmux_pane_right {
             bindings = <&tmux_pane_right>;
-            key-positions = <27 13>;
+            key-positions = <13 35>;
         };
 
         tmux_pane_up {
             bindings = <&tmux_pane_up>;
-            key-positions = <27 12>;
+            key-positions = <12 35>;
         };
 
         tmux_pane_down {
             bindings = <&tmux_pane_down>;
-            key-positions = <27 23>;
+            key-positions = <23 35>;
         };
 
         tmux_win_left {
             bindings = <&tmux_win_prev>;
-            key-positions = <11 26>;
+            key-positions = <11 34>;
         };
 
         tmux_win_right {
             bindings = <&tmux_win_next>;
-            key-positions = <13 26>;
+            key-positions = <13 34>;
         };
 
         vi_ins_mv_eol {
             bindings = <&vi_ins_mv_eol>;
-            key-positions = <24 23>;
+            key-positions = <13 18>;
         };
     };
 
