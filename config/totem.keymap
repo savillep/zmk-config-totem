@@ -165,16 +165,33 @@
             bindings = <&kp LC(O) &kp LS(A)>;
             label = "VI_INS_MV_EOL";
         };
+
+        m_lsh_back_del: m_lsh_back_del {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bkspc_del>;
+            label = "M_LSH_BACK_DEL";
+        };
     };
 
     behaviors {
-        mm_shift_del: mm_shift_del {
+        bkspc_del: bkspc_del {
             compatible = "zmk,behavior-mod-morph";
-            label = "MM_SHIFT_DEL";
-            bindings = <&kp LS(BACKSPACE)>, <&kp DELETE>;
+            label = "BKSPC_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
+        };
+
+        lt_bkspc_del_2: lt_bkspc_del_2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_BKSPC_DEL_2";
+            bindings = <&lt>, <&bkspc_del>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -200,10 +217,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-               &kp Q           &kp W           &kp F               &kp P            &kp B                   &kp J                 &kp L             &kp U               &kp Y           &kp SEMICOLON
-               &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHIFT T     &mt LC(LEFT_SHIFT) G    &mt LC(LEFT_SHIFT) M  &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &kp O
-&mm_shift_del  &kp Z           &kp X           &kp C               &kp D            &kp V                   &kp K                 &kp H             &kp COMMA           &kp DOT         &kp SLASH      &to 3
-                                               &kp DELETE          &lt 2 BACKSPACE  &lt 1 TAB               &lt 1 SPACE           &lt 2 RETURN      &kp ESCAPE
+            &kp Q           &kp W           &kp F               &kp P                &kp B                   &kp J                 &kp L             &kp U               &kp Y           &kp SEMICOLON
+            &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHIFT T         &mt LC(LEFT_SHIFT) G    &mt LC(LEFT_SHIFT) M  &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &kp O
+&bkspc_del  &kp Z           &kp X           &kp C               &kp D                &kp V                   &kp K                 &kp H             &kp COMMA           &kp DOT         &kp SLASH      &to 3
+                                            &kp DELETE          &lt_bkspc_del_2 2 0  &lt 1 TAB               &lt 1 SPACE           &lt 2 RETURN      &kp ESCAPE
             >;
         };
 
