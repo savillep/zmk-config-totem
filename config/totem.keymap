@@ -171,7 +171,7 @@
         mm_shift_del: mm_shift_del {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_SHIFT_DEL";
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            bindings = <&kp LS(BACKSPACE)>, <&kp DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
