@@ -200,10 +200,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q           &kp W           &kp F               &kp P            &kp B                   &kp J                 &kp L             &kp U               &kp Y           &kp SEMICOLON
-       &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHIFT T     &mt LC(LEFT_SHIFT) G    &mt LC(LEFT_SHIFT) M  &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &kp O
-&to 3  &kp Z           &kp X           &kp C               &kp D            &kp V                   &kp K                 &kp H             &kp COMMA           &kp DOT         &kp SLASH      &to 3
-                                       &kp DELETE          &lt 2 BACKSPACE  &lt 1 TAB               &lt 1 SPACE           &lt 2 RETURN      &kp ESCAPE
+               &kp Q           &kp W           &kp F               &kp P            &kp B                   &kp J                 &kp L             &kp U               &kp Y           &kp SEMICOLON
+               &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHIFT T     &mt LC(LEFT_SHIFT) G    &mt LC(LEFT_SHIFT) M  &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &kp O
+&mm_shift_del  &kp Z           &kp X           &kp C               &kp D            &kp V                   &kp K                 &kp H             &kp COMMA           &kp DOT         &kp SLASH      &to 3
+                                               &kp DELETE          &lt 2 BACKSPACE  &lt 1 TAB               &lt 1 SPACE           &lt 2 RETURN      &kp ESCAPE
             >;
         };
 
