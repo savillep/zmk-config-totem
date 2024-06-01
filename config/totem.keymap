@@ -36,49 +36,49 @@
 
         tmux_split_v {
             bindings = <&tmux_split_v>;
-            key-positions = <25 27>;
+            key-positions = <>;
             layers = <0>;
         };
 
         tmux_split_h {
             bindings = <&tmux_split_h>;
-            key-positions = <27 24>;
+            key-positions = <>;
             layers = <0>;
         };
 
         tmux_pane_left {
             bindings = <&tmux_pane_left>;
-            key-positions = <11 35>;
+            key-positions = <>;
         };
 
         tmux_pane_right {
             bindings = <&tmux_pane_right>;
-            key-positions = <13 35>;
+            key-positions = <>;
         };
 
         tmux_pane_up {
             bindings = <&tmux_pane_up>;
-            key-positions = <12 35>;
+            key-positions = <>;
         };
 
         tmux_pane_down {
             bindings = <&tmux_pane_down>;
-            key-positions = <23 35>;
+            key-positions = <>;
         };
 
         tmux_win_left {
             bindings = <&tmux_win_prev>;
-            key-positions = <11 34>;
+            key-positions = <>;
         };
 
         tmux_win_right {
             bindings = <&tmux_win_next>;
-            key-positions = <13 34>;
+            key-positions = <>;
         };
 
         vi_ins_mv_eol {
             bindings = <&vi_ins_mv_eol>;
-            key-positions = <13 18>;
+            key-positions = <>;
         };
 
         cmb_esc {
