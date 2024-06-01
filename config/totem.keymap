@@ -217,10 +217,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q           &kp W           &kp F               &kp P                &kp B                   &kp J                 &kp L             &kp U               &kp Y           &kp SEMICOLON
-            &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHIFT T         &mt LC(LEFT_SHIFT) G    &mt LC(LEFT_SHIFT) M  &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &kp O
-&bkspc_del  &kp Z           &kp X           &kp C               &kp D                &kp V                   &kp K                 &kp H             &kp COMMA           &kp DOT         &kp SLASH      &to 3
-                                            &kp DELETE          &lt_bkspc_del_2 2 0  &lt 1 TAB               &lt 1 SPACE           &lt 2 RETURN      &kp ESCAPE
+       &kp Q           &kp W           &kp F               &kp P                &kp B        &kp J        &kp L             &kp U               &kp Y           &kp SEMICOLON
+       &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHIFT T         &kp G        &kp M        &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &kp O
+&none  &kp Z           &kp X           &kp C               &kp D                &kp V        &kp K        &kp H             &kp COMMA           &kp DOT         &kp SLASH      &to 3
+                                       &none               &lt_bkspc_del_2 2 0  &lt 1 TAB    &lt 1 SPACE  &lt 2 RETURN      &none
             >;
         };
 
@@ -243,7 +243,7 @@
             bindings = <
         &none     &kp PAGE_UP  &kp ESCAPE      &kp PAGE_DOWN    &none      &none             &kp N7                   &kp N8                      &kp N9                  &none
         &kp HOME  &kp LEFT     &kp UP_ARROW    &kp RIGHT_ARROW  &kp END    &kp LEFT_GUI      &mt LEFT_SHIFT NUMBER_4  &mt RIGHT_CONTROL NUMBER_5  &mt RIGHT_ALT NUMBER_6  &kp KP_DOT
-&trans  &none     &none        &kp DOWN_ARROW  &none            &none      &kp LS(LEFT_GUI)  &kp NUMBER_1             &kp N2                      &kp NUMBER_3            &none       &none
+&trans  &none     &none        &kp DOWN_ARROW  &kp ESCAPE       &none      &kp LS(LEFT_GUI)  &kp NUMBER_1             &kp N2                      &kp NUMBER_3            &none       &none
                                &trans          &trans           &trans     &trans            &kp N0                   &none
             >;
         };
