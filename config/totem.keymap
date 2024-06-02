@@ -238,7 +238,7 @@
             bindings = <
        &lt_long_hold 4 Q  &kp W           &kp F               &kp P                &kp B        &kp J         &kp L             &kp U               &kp Y           &lt_long_hold 4 SEMICOLON
        &mt LEFT_GUI A     &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHIFT T         &kp G        &kp M         &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &kp O
-&none  &lt_long_hold 3 Z  &kp X           &kp C               &kp D                &kp V        &kp K         &kp H             &kp COMMA           &kp DOT         &lt_long_hold 3 SLASH      &none
+&mo 4  &lt_long_hold 3 Z  &kp X           &kp C               &kp D                &kp V        &kp K         &kp H             &kp COMMA           &kp DOT         &lt_long_hold 3 SLASH      &mo 3
                                           &none               &lt_bkspc_del_2 2 0  &lt 1 TAB    &lt 1 RETURN  &lt 2 SPACE       &none
             >;
         };
