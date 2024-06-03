@@ -78,12 +78,17 @@
 
         vi_ins_mv_eol {
             bindings = <&vi_ins_mv_eol>;
-            key-positions = <>;
+            key-positions = <35 16>;
         };
 
         cmb_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <35 34>;
+        };
+
+        vi_esc_colon {
+            bindings = <&m_esc_colon>;
+            key-positions = <35 27>;
         };
     };
 
