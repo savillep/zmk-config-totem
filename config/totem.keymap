@@ -305,10 +305,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none  &to 0       &none             &none            &none              &none             &kp F1  &kp F2   &kp F3   &kp F4
-       &none  &kp K_MUTE  &kp C_VOL_DN      &kp C_VOLUME_UP  &kp KP_NUMBER_3    &PrScr            &kp F5  &kp F6   &kp F7   &kp F8
-&none  &none  &kp K_BACK  &kp K_PLAY_PAUSE  &kp K_FORWARD    &none              &tog_monitor_src  &kp F9  &kp F10  &kp F11  &kp F12  &none
-                          &trans            &trans           &trans             &trans            &trans  &trans
+       &none  &to 0                &none                           &none                       &none              &none             &kp F1  &kp F2   &kp F3   &kp F4
+       &none  &mt LEFT_ALT K_MUTE  &mt LEFT_CONTROL K_VOLUME_DOWN  &mt LEFT_SHIFT K_VOLUME_UP  &kp KP_NUMBER_3    &PrScr            &kp F5  &kp F6   &kp F7   &kp F8
+&none  &none  &kp K_BACK           &kp K_PLAY_PAUSE                &kp K_FORWARD               &none              &tog_monitor_src  &kp F9  &kp F10  &kp F11  &kp F12  &none
+                                   &trans                          &trans                      &trans             &trans            &trans  &trans
             >;
         };
 
