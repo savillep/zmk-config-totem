@@ -284,7 +284,7 @@
        &kp CARET  &kp SEMI   &kp AMPS        &kp ASTRK        &kp EQUAL      &kp SLASH      &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp PLUS   &kp ASTERISK
        &kp EXCL   &kp AT     &kp HASH        &kp DOLLAR       &kp PERCENT    &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDER
 &none  &kp GRAVE  &kp TILDE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp COLON      &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL  &kp BACKSLASH  &none
-                             &trans          &trans           &trans         &trans         &trans                &trans
+                             &trans          &trans           &kp ESCAPE     &trans         &trans                &trans
             >;
         };
 
