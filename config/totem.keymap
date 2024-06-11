@@ -283,10 +283,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp CARET  &kp SEMI   &kp AMPS        &kp ASTRK        &kp EQUAL      &kp SLASH      &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp PLUS   &kp ASTERISK
-       &kp EXCL   &kp AT     &kp HASH        &kp DOLLAR       &kp PERCENT    &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDER
-&none  &kp GRAVE  &kp TILDE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp COLON      &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL  &kp BACKSLASH  &none
-                             &trans          &trans           &kp ESCAPE     &trans         &trans                &trans
+       &kp CARET  &kp SEMI         &kp AMPS               &kp ASTRK              &kp EQUAL      &kp SLASH      &kp DOUBLE_QUOTES                &kp SINGLE_QUOTE                    &kp PLUS            &kp ASTERISK
+       &kp EXCL   &mt LEFT_ALT AT  &mt LEFT_CONTROL HASH  &mt LEFT_SHIFT DOLLAR  &kp PERCENT    &kp BACKSLASH  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LEFT_CONTROL RIGHT_PARENTHESIS  &mt LEFT_ALT MINUS  &kp UNDER
+&none  &kp GRAVE  &kp TILDE        &kp LEFT_BRACE         &kp RIGHT_BRACE        &kp COLON      &kp PIPE       &kp LEFT_BRACKET                 &kp RIGHT_BRACKET                   &kp EQUAL           &kp BACKSLASH  &none
+                                   &trans                 &trans                 &kp ESCAPE     &trans         &trans                           &trans
             >;
         };
 
