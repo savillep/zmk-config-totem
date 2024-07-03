@@ -235,10 +235,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &mo_long_hold 4 Q  &kp W           &kp F               &mt ESCAPE P  &kp B        &kp J        &mt ESCAPE L      &kp U               &kp Y           &mo_long_hold 4 SEMICOLON
-       &mt LEFT_GUI A     &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHIFT T  &kp G        &kp M        &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &kp O
-&none  &mo_long_hold 3 Z  &kp X           &kp C               &kp D         &kp V        &kp K        &kp H             &kp COMMA           &kp DOT         &mo_long_hold 3 SLASH      &none
-                                          &none               &bkspc_del    &lt 1 TAB    &lt 2 SPACE  &kp RET           &none
+       &kp Q           &kp W           &kp F               &mt ESCAPE P     &kp B        &kp J        &mt ESCAPE L      &kp U               &kp Y           &kp SEMICOLON
+       &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHIFT T     &kp G        &kp M        &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &kp O
+&none  &kp Z           &kp X           &kp C               &kp D            &kp V        &kp K        &kp H             &kp COMMA           &kp DOT         &kp SLASH      &none
+                                       &lt 4 DEL           &lt 2 BACKSPACE  &lt 1 TAB    &lt 1 SPACE  &kp RET           &lt 3 ESC
             >;
         };
 
@@ -259,10 +259,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &none       &kp HOME       &none           &kp END          &none         &none             &kp N7                   &kp N8                      &kp N9                 &none
-        &kp ESCAPE  &kp LEFT       &kp UP_ARROW    &kp RIGHT_ARROW  &kp ESCAPE    &kp LEFT_GUI      &mt LEFT_SHIFT NUMBER_4  &mt RIGHT_CONTROL NUMBER_5  &mt LEFT_ALT NUMBER_6  &kp KP_DOT
-&trans  &none       &kp PAGE_DOWN  &kp DOWN_ARROW  &kp PAGE_UP      &kp COLON     &kp LS(LEFT_GUI)  &kp NUMBER_1             &kp N2                      &kp NUMBER_3           &none       &none
-                                   &trans          &trans           &trans        &trans            &kp N0                   &none
+        &none  &kp HOME     &none           &kp END          &none        &none             &kp N7                   &kp N8                      &kp N9                 &none
+        &none  &kp LEFT     &kp UP_ARROW    &kp RIGHT_ARROW  &kp COLON    &kp LEFT_GUI      &mt LEFT_SHIFT NUMBER_4  &mt RIGHT_CONTROL NUMBER_5  &mt LEFT_ALT NUMBER_6  &kp KP_DOT
+&trans  &none  &kp PAGE_UP  &kp DOWN_ARROW  &kp PAGE_DOWN    &kp ESC      &kp LS(LEFT_GUI)  &kp NUMBER_1             &kp N2                      &kp NUMBER_3           &kp KP_EQUAL  &none
+                            &trans          &trans           &trans       &trans            &kp N0                   &none
             >;
         };
 
@@ -283,9 +283,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp CARET  &kp SEMI         &kp AMPS               &kp ASTRK              &kp EQUAL      &kp SLASH      &kp DOUBLE_QUOTES                &kp SINGLE_QUOTE                    &kp PLUS            &kp ASTERISK
-       &kp EXCL   &mt LEFT_ALT AT  &mt LEFT_CONTROL HASH  &mt LEFT_SHIFT DOLLAR  &kp PERCENT    &kp BACKSLASH  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LEFT_CONTROL RIGHT_PARENTHESIS  &mt LEFT_ALT MINUS  &kp UNDER
-&none  &kp GRAVE  &kp TILDE        &kp LEFT_BRACE         &kp RIGHT_BRACE        &kp COLON      &kp PIPE       &kp LEFT_BRACKET                 &kp RIGHT_BRACKET                   &kp EQUAL           &kp BACKSLASH  &none
+       &kp CARET  &kp AMPS         &kp ASTRK              &kp SINGLE_QUOTE       &none          &kp BACKSLASH  &kp DOUBLE_QUOTES                &kp SEMI                            &kp PLUS            &kp ASTERISK
+       &kp EXCL   &mt LEFT_ALT AT  &mt LEFT_CONTROL HASH  &mt LEFT_SHIFT DOLLAR  &kp PERCENT    &kp SLASH      &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LEFT_CONTROL RIGHT_PARENTHESIS  &mt LEFT_ALT MINUS  &kp UNDER
+&none  &kp GRAVE  &kp TILDE        &kp LEFT_BRACE         &kp RIGHT_BRACE        &kp COLON      &kp PIPE       &kp LEFT_BRACKET                 &kp RIGHT_BRACKET                   &kp EQUAL           &none         &none
                                    &trans                 &trans                 &kp ESCAPE     &trans         &trans                           &trans
             >;
         };
